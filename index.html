@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bespoke Moment | Custom Jewellery Australia & New Zealand</title>
+  </head>
+
+  <body>
+    <!-- Netlify Forms detection form for the React application -->
+    <form
+      name="enquiry"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      enctype="multipart/form-data"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="enquiry" />
+
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="country" />
+      <input type="text" name="city-suburb" />
+
+      <select name="jewellery-type">
+        <option value="">Select an option</option>
+        <option value="engagement-ring">Engagement Ring</option>
+        <option value="wedding-band">Wedding Band</option>
+        <option value="gift-jewellery">Gift Jewellery</option>
+        <option value="other">Other</option>
+      </select>
+
+      <input type="text" name="budget" />
+      <textarea name="message"></textarea>
+
+      <input
+        type="file"
+        name="attachment"
+        accept=".jpg,.jpeg,.png,.webp,.pdf"
+      />
+
+      <input type="radio" name="contact-method" value="whatsapp" />
+      <input type="radio" name="contact-method" value="instagram" />
+
+      <input type="text" name="contact-details" />
+
+      <input type="text" name="bot-field" />
+    </form>
+
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

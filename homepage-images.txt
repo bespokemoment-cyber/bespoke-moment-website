@@ -1,0 +1,23 @@
+HOME HERO
+Image: hero-jewellery-box.jpg
+Title: Bespoke Jewellery, Made Around You
+Alt: Bespoke Moment jewellery collection
+Description: A selection of fine jewellery created with trusted manufacturers in Guangzhou and Shenzhen.
+
+ENGAGEMENT RINGS
+Image: engagement-home.jpg
+Title: Engagement Rings
+Meta: Custom designs • Diamonds • Personalised settings
+Alt: Custom engagement rings by Bespoke Moment
+
+WEDDING BANDS
+Image: wedding-home.jpg
+Title: Wedding Bands
+Meta: Matching • Complementary • Personalised
+Alt: Custom wedding bands by Bespoke Moment
+
+GIFT JEWELLERY
+Image: gift-home.jpg
+Title: Gift Jewellery
+Meta: 18K gold • Diamonds • Gemstones
+Alt: Fine gift jewellery by Bespoke Moment
