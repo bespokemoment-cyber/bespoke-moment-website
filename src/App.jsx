@@ -243,37 +243,37 @@ function PortfolioPage({ type, onHome }) {
 
 function HomePage() {
   const [formStatus, setFormStatus] = useState('idle')
+const handleEnquirySubmit = async (event) => {
+  event.preventDefault()
 
-  const handleEnquirySubmit = async (event) => {
-    event.preventDefault()
+  const form = event.currentTarget
+  const formData = new FormData(form)
 
-    if (formStatus === 'submitting') return
+  formData.set('form-name', 'enquiry')
 
-    const form = event.currentTarget
-    const formData = new FormData(form)
+  setFormStatus('submitting')
 
-    setFormStatus('submitting')
-
-    try {
-      const response = await fetch('/', {
+  try {
+    const response = await fetch(
+      'https://bespoke-moment-website.netlify.app/',
+      {
         method: 'POST',
         body: formData,
-      })
-
-      if (!response.ok) {
-        throw new Error(`Submission failed with status ${response.status}`)
       }
+    )
 
-      form.reset()
-      setFormStatus('success')
-    } catch (error) {
-      console.error('Enquiry submission failed:', error)
-      setFormStatus('error')
+    if (!response.ok) {
+      throw new Error(`Form submission failed: ${response.status}`)
     }
-  }
 
-  return (
-    <>
+    form.reset()
+    setFormStatus('success')
+  } catch (error) {
+    console.error('Enquiry submission error:', error)
+    setFormStatus('error')
+  }
+}
+  return (    <>
       <main>
         <section className="hero">
           <div className="hero-content">
@@ -468,21 +468,27 @@ function HomePage() {
     </p>
   </div>
 
-  <form
-    className="enquiry-form"
-    name="bespoke-enquiry"
-    method="POST"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-    encType="multipart/form-data"
-    onSubmit={handleEnquirySubmit}
-  >
-    <input type="hidden" name="form-name" value="bespoke-enquiry" />
+ <form
+  className="enquiry-form"
+  name="enquiry"
+  method="POST"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+  encType="multipart/form-data"
+  onSubmit={handleEnquirySubmit}
+>
+  <input
+    type="hidden"
+    name="form-name"
+    value="enquiry"
+  />
 
-    <p className="form-hidden-field" aria-hidden="true">
-<div style={{ display: 'none' }} aria-hidden="true">
+    <div
+  className="form-hidden-field"
+  aria-hidden="true"
+>
   <label htmlFor="bot-field">
-    Don't fill this out if you're human
+    Don&apos;t fill this out if you&apos;re human
   </label>
 
   <input
@@ -493,7 +499,6 @@ function HomePage() {
     autoComplete="off"
   />
 </div>
-    </p>
 
     <div className="form-row">
       <div className="form-field">
