@@ -96,7 +96,7 @@ const portfolioData = {
     eyebrow: 'SPECIAL MOMENTS',
     title: 'Gift Jewellery',
     intro: 'Personalised jewellery for birthdays, anniversaries, milestones and the moments worth celebrating.',
-    note: 'Selected pieces may be available as ready-made jewellery. Availability should be confirmed before purchase.',
+    note: 'Custom pieces created for birthdays, anniversaries, milestones and the moments worth celebrating.',
     projects: [
       {
         title: 'Tiger-Inspired Gold Earrings',
@@ -241,6 +241,1363 @@ function PortfolioPage({ type, onHome }) {
   )
 }
 
+function TermsPage() {
+  return (
+    <main className="legal-page">
+
+      <section className="legal-hero">
+        <h1>
+          Terms & Conditions
+        </h1>
+
+        <p className="legal-updated">
+          Last updated: 31 August 2026
+        </p>
+      </section>
+
+
+      <section className="legal-content">
+
+        <div className="legal-section">
+          <h2>1. Agreement</h2>
+
+          <p>
+            These Terms & Conditions apply to purchases made through the
+            Bespoke Moment website, approved payment links and authorised
+            sales channels.
+          </p>
+
+          <p>
+            By placing a custom jewellery order with Bespoke Moment, you
+            agree to these Terms & Conditions and any policies incorporated
+            by reference.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>2. Business Information</h2>
+
+          <p>
+            Bespoke Moment is operated by:
+          </p>
+
+          <p>
+            <strong>Tiana Jiang</strong><br />
+            <strong>Legal entity:</strong> Bespoke Moment Trading<br />
+            <strong>Registration number:</strong> 66176712751
+          </p>
+
+          <p>
+            <strong>Australian business / correspondence address:</strong><br />
+            PO Box 971, North Adelaide SA 5006, Australia
+          </p>
+
+          <p>
+            <strong>Manufacturing / operational location:</strong><br />
+            1516, Building No. 1, Xuepan Mansion, Panyu, Guangzhou, China
+          </p>
+
+          <p>
+            <strong>Email:</strong>{' '}
+            <a href="mailto:hello@bespokemoment.com">
+              hello@bespokemoment.com
+            </a>
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>3. Eligibility</h2>
+
+          <p>
+            You must be legally capable of entering into a binding contract
+            and authorised to use the selected payment method.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>4. Custom Jewellery</h2>
+
+          <p>
+            Bespoke Moment specialises in custom-made jewellery created
+            according to each customer's preferences and specifications.
+          </p>
+
+          <p>
+            Custom orders may include personalised designs, selected diamonds
+            or gemstones, metal choices, ring sizes, engraving and other
+            agreed specifications.
+          </p>
+
+          <p>
+            Because each piece is made specifically for the customer, the
+            final product may differ slightly from reference images or design
+            inspirations where reasonably necessary to accommodate practical
+            manufacturing and craftsmanship requirements.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>5. Product Information</h2>
+
+          <p>
+            We take reasonable care to describe our jewellery accurately.
+          </p>
+
+          <p>
+            Measurements, weights, dimensions and colours may be approximate
+            unless expressly confirmed in the personalised quotation or final
+            approved design.
+          </p>
+
+          <p>
+            Where a specific specification has been agreed in writing, the
+            agreed specification will apply.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>6. Pricing</h2>
+
+          <p>
+            Prices are displayed in Australian dollars unless otherwise stated.
+          </p>
+
+          <p>
+            The personalised quotation or approved checkout will identify the
+            amount payable for your custom order.
+          </p>
+
+          <p>
+            A quotation is based on the design, materials, gemstones,
+            specifications and other information available at the time of
+            quotation.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>7. Pricing or Description Errors</h2>
+
+          <p>
+            Where a genuine pricing or description error occurs, we may contact
+            you before fulfilment to confirm the corrected details, offer a
+            suitable alternative, or cancel and refund the affected order.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>8. Payment</h2>
+
+          <p>
+            Custom orders require a <strong>70% deposit</strong> to commence
+            the customisation and production process.
+          </p>
+
+          <p>
+            The remaining <strong>30% balance</strong> is payable after the
+            finished piece has been reviewed and approved, and before dispatch,
+            unless otherwise agreed in writing.
+          </p>
+
+          <p>
+            Payment must be completed through an approved payment method.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>9. Fraud and Verification</h2>
+
+          <p>
+            We may request reasonable information to verify identity, payment
+            authority or delivery details before processing a high-value custom
+            order.
+          </p>
+
+          <p>
+            We reserve the right to delay or decline an order where reasonable
+            verification cannot be completed.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>10. Custom Order Process</h2>
+
+          <p>
+            Custom orders are created according to the specifications agreed
+            between the customer and Bespoke Moment.
+          </p>
+
+          <ol>
+            <li>Share your inspiration and requirements.</li>
+            <li>Receive a personalised quotation.</li>
+            <li>Confirm the order and pay the required deposit.</li>
+            <li>Review and approve the digital design.</li>
+            <li>Production and craftsmanship.</li>
+            <li>Final review and approval.</li>
+            <li>Pay the remaining balance and prepare for dispatch.</li>
+          </ol>
+
+          <p>
+            Production will begin after the required deposit has been received
+            and the applicable design or production requirements have been
+            confirmed.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>11. Design Approval</h2>
+
+          <p>
+            Where a digital design is provided for review, the customer is
+            responsible for carefully checking the design, specifications and
+            personalisation details before approving production.
+          </p>
+
+          <p>
+            Once a design has been approved and production has commenced,
+            changes may no longer be possible or may result in additional
+            costs or delays.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>12. Cancellation</h2>
+
+          <p>
+            Custom orders are subject to the cancellation terms set out in the
+            applicable Refunds & Returns Policy.
+          </p>
+
+          <p>
+            Because custom jewellery is made specifically for the customer,
+            cancellation rights may be limited once materials have been
+            purchased or production has commenced.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>13. Shipping</h2>
+
+          <p>
+            Shipping arrangements, estimated delivery times and tracking
+            information are governed by our Shipping Policy and the information
+            provided with your order.
+          </p>
+
+          <p>
+            <a href="/shipping">
+              View Shipping Policy →
+            </a>
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>14. Returns and Consumer Rights</h2>
+
+          <p>
+            Returns, refunds and available remedies for custom jewellery are
+            governed by our Refunds & Returns Policy and the Australian Consumer
+            Law.
+          </p>
+
+          <p>
+            Nothing in these Terms & Conditions is intended to exclude, restrict
+            or modify any rights or remedies that cannot legally be excluded,
+            restricted or modified under applicable law.
+          </p>
+
+          <p>
+            <a href="/refunds">
+              View Refunds & Returns Policy →
+            </a>
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>15. Changes to These Terms</h2>
+
+          <p>
+            Bespoke Moment may update these Terms & Conditions from time to time.
+          </p>
+
+          <p>
+            The version published on the website at the time of your order will
+            generally apply to that order, unless otherwise required by law.
+          </p>
+        </div>
+
+
+        <div className="legal-contact">
+          <p className="eyebrow">
+            CONTACT
+          </p>
+
+          <h2>
+            Questions about these terms?
+          </h2>
+
+          <p>
+            Bespoke Moment Trading<br />
+            PO Box 971, North Adelaide SA 5006, Australia
+          </p>
+
+          <p>
+            <a href="mailto:hello@bespokemoment.com">
+              hello@bespokemoment.com
+            </a>
+          </p>
+        </div>
+
+      </section>
+
+    </main>
+  )
+}
+
+function ShippingPage() {
+  return (
+    <main className="legal-page">
+
+      <section className="legal-hero">
+        <h1>
+          Shipping Policy
+        </h1>
+      </section>
+
+
+      <section className="legal-content">
+
+        <div className="legal-section">
+          <h2>1. Order Processing</h2>
+
+          <p>
+            Custom Jewellery production begins after the required deposit and
+            design approval have been received.
+          </p>
+
+          <p>
+            Production time and shipping time are separate.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>2. Shipping Costs</h2>
+
+          <p>
+            Standard shipping is included in the quoted price unless otherwise
+            stated.
+          </p>
+
+          <p>
+            Additional charges may apply for:
+          </p>
+
+          <ul>
+            <li>express delivery;</li>
+            <li>remote locations;</li>
+            <li>redelivery;</li>
+            <li>an address correction;</li>
+            <li>special insurance;</li>
+            <li>another service requested by the customer.</li>
+          </ul>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>3. Estimated Delivery</h2>
+
+          <p>
+            Estimated delivery after dispatch is generally 5–15 business days.
+          </p>
+
+          <p>
+            Delivery times may vary depending on:
+          </p>
+
+          <ul>
+            <li>destination;</li>
+            <li>courier service;</li>
+            <li>customs processing;</li>
+            <li>public holidays;</li>
+            <li>weather;</li>
+            <li>remote-area delivery;</li>
+            <li>international transport disruptions.</li>
+          </ul>
+
+          <p>
+            All delivery dates are estimates unless expressly confirmed as
+            guaranteed.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>4. Tracking</h2>
+
+          <p>
+            Tracking information will be provided after dispatch where available.
+          </p>
+
+          <p>
+            Customers are also responsible for monitoring tracking updates and
+            contacting us promptly if a delivery issue appears.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>5. Delivery Address</h2>
+
+          <p>
+            Customers must provide a complete and accurate delivery address.
+          </p>
+
+          <p>
+            Additional charges may apply where a parcel must be redirected or
+            resent because the customer supplied incorrect or incomplete
+            information.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>6. Signature and Safe Delivery</h2>
+
+          <p>
+            High-value orders may require a signature.
+          </p>
+
+          <p>
+            Customers should not authorise unattended delivery unless they
+            accept the risks associated with leaving the parcel at the
+            nominated location.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>7. Delayed Parcels</h2>
+
+          <p>
+            If a parcel is materially delayed, please contact us so we can
+            investigate with the courier.
+          </p>
+
+          <p>
+            We will remain responsible for working with the customer and
+            courier to provide an appropriate solution where the order is not
+            supplied within the agreed or a reasonable period.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>8. Lost Parcels</h2>
+
+          <p>
+            A parcel will not automatically be treated as lost merely because
+            tracking is delayed.
+          </p>
+
+          <p>
+            Where the courier confirms that a parcel has been lost, Bespoke
+            Moment will provide an appropriate resolution, which may include
+            replacement or refund depending on the circumstances.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>9. Transit Damage</h2>
+
+          <p>
+            Contact us promptly if the parcel arrives visibly damaged.
+          </p>
+
+          <p>
+            Please retain:
+          </p>
+
+          <ul>
+            <li>outer packaging;</li>
+            <li>inner packaging;</li>
+            <li>shipping label;</li>
+            <li>jewellery box;</li>
+            <li>damaged item.</li>
+          </ul>
+
+          <p>
+            Photographs and video may be required for the courier claim and
+            product assessment.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>10. Customs, Taxes and Duties</h2>
+
+          <p>
+            Any applicable duties and taxes for delivery to Australia and New Zealand are
+            included in the price unless otherwise stated.
+          </p>
+        </div>
+
+
+        <div className="legal-contact">
+
+          <p className="eyebrow">
+            CONTACT
+          </p>
+
+          <h2>
+            Questions about shipping?
+          </h2>
+
+          <p>
+            Bespoke Moment Trading<br />
+            PO Box 971, North Adelaide SA 5006, Australia
+          </p>
+
+          <p>
+            <a href="mailto:hello@bespokemoment.com">
+              hello@bespokemoment.com
+            </a>
+          </p>
+
+        </div>
+
+      </section>
+
+    </main>
+  )
+}
+
+function RefundsPage() {
+  return (
+    <main className="legal-page">
+
+      <section className="legal-hero">
+        <h1>
+          Refunds & Returns
+        </h1>
+      </section>
+
+
+      <section className="legal-content">
+
+        <div className="legal-section">
+          <h2>1. Custom Jewellery</h2>
+
+          <p>
+            Bespoke Moment creates Custom Jewellery according to each
+            customer's individual requirements.
+          </p>
+
+          <p>
+            Custom orders may include personalised designs, ring size, metal,
+            diamond or gemstone, setting, engraving, proportions and other
+            agreed specifications.
+          </p>
+
+          <p>
+            Because each piece is made specifically for the customer,
+            cancellation and change-of-mind conditions apply differently from
+            standard retail purchases.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>2. Cancellation Within 12 Hours</h2>
+
+          <p>
+            You may request cancellation within <strong>12 hours</strong> of
+            paying the deposit.
+          </p>
+
+          <p>
+            During this period, a selected diamond or gemstone may remain
+            available to other buyers unless Bespoke Moment has confirmed in
+            writing that it has been reserved.
+          </p>
+
+          <p>
+            If the originally selected stone becomes unavailable during this
+            period, we will provide comparable alternatives for your review
+            and approval before proceeding.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>3. Cancellation After the 12-Hour Period</h2>
+
+          <p>
+            After the 12-hour cooling-off period, sourcing, design preparation,
+            material purchasing or production may have commenced.
+          </p>
+
+          <p>
+            Cancellation requests received after this period will be
+            considered based on the stage of your order and the costs already
+            reasonably incurred by Bespoke Moment.
+          </p>
+
+          <p>
+            Once materials have been purchased or production has commenced,
+            a change-of-mind cancellation or refund will generally not be
+            available.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>4. Change of Mind</h2>
+
+          <p>
+            Because Custom Jewellery is made specifically according to your
+            confirmed requirements, we do not accept change-of-mind returns or
+            refunds once the applicable cancellation period has ended and
+            sourcing, design or production has commenced.
+          </p>
+
+          <p>
+            This includes circumstances where you:
+          </p>
+
+          <ul>
+            <li>change your preferred design;</li>
+            <li>provide an incorrect ring size;</li>
+            <li>change your mind about the metal, stone or engraving;</li>
+            <li>no longer require the jewellery;</li>
+            <li>find another product elsewhere;</li>
+            <li>decide that the confirmed design no longer suits your personal preference.</li>
+          </ul>
+
+          <p>
+            This does not affect any remedies available under the Australian
+            Consumer Law.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>5. Faulty, Damaged or Incorrect Jewellery</h2>
+
+          <p>
+            Please contact us as soon as reasonably possible if your jewellery:
+          </p>
+
+          <ul>
+            <li>arrives damaged;</li>
+            <li>has a suspected manufacturing defect;</li>
+            <li>is materially different from the confirmed description or specifications;</li>
+            <li>is incorrect due to an error by Bespoke Moment;</li>
+            <li>does not meet an applicable consumer guarantee.</li>
+          </ul>
+
+          <p>
+            Please provide:
+          </p>
+
+          <ul>
+            <li>your full name;</li>
+            <li>order number;</li>
+            <li>a clear description of the issue;</li>
+            <li>clear photographs and/or videos;</li>
+            <li>photographs of the parcel and packaging where transit damage is involved.</li>
+          </ul>
+
+          <p>
+            We may ask you to return the item for inspection before determining
+            the appropriate remedy.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>6. Minor Problems</h2>
+
+          <p>
+            Where a problem is minor and can be remedied within a reasonable
+            time, Bespoke Moment may provide an appropriate remedy, such as:
+          </p>
+
+          <ul>
+            <li>repair;</li>
+            <li>replacement of an affected component;</li>
+            <li>adjustment;</li>
+            <li>another appropriate solution.</li>
+          </ul>
+
+          <p>
+            Where required by Australian Consumer Law, the remedy will be
+            provided without charge.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>7. Major Problems</h2>
+
+          <p>
+            Where there is a major failure under Australian Consumer Law, you
+            may be entitled to reject the goods and choose an available remedy,
+            which may include a refund or replacement.
+          </p>
+
+          <p>
+            A problem may be considered major where, for example, the jewellery:
+          </p>
+
+          <ul>
+            <li>is unsafe;</li>
+            <li>is significantly different from the confirmed description or approved specifications;</li>
+            <li>is substantially unfit for its normal or disclosed purpose and cannot easily be remedied within a reasonable time;</li>
+            <li>has a problem so serious that a reasonable consumer would not have purchased it had they known about the problem.</li>
+          </ul>
+
+          <p>
+            The appropriate remedy will depend on the circumstances and
+            applicable law.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>8. Return Shipping</h2>
+
+          <p>
+            For confirmed manufacturing defects, incorrect items supplied by
+            Bespoke Moment, or another issue for which Bespoke Moment is
+            responsible, we will cover or reimburse reasonable return
+            shipping costs where required.
+          </p>
+
+          <p>
+            Please contact us before returning an item.
+          </p>
+
+          <p>
+            We do not accept C.O.D. (cash on delivery) returns.
+          </p>
+
+          <p>
+            Where a return is required, the jewellery should be securely
+            packaged and sent using an appropriate tracked shipping service.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>9. Refund Processing</h2>
+
+          <p>
+            Where a refund is approved, it will generally be issued to the
+            original payment method.
+          </p>
+
+          <p>
+            Please allow approximately <strong>5–10 business days</strong>
+            after the refund has been processed for the funds to appear,
+            depending on your bank or payment provider.
+          </p>
+
+          <p>
+            Currency conversion charges, foreign transaction fees and
+            exchange-rate differences imposed by banks or payment providers
+            are outside our control.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>10. Australian Consumer Law</h2>
+
+          <p>
+            Nothing in this policy excludes, restricts or modifies any rights
+            available to you under the Australian Consumer Law.
+          </p>
+
+          <p>
+            Our goods come with guarantees that cannot be excluded under the
+            Australian Consumer Law.
+          </p>
+
+          <p>
+            You may be entitled to a replacement or refund for a major failure
+            and compensation for any other reasonably foreseeable loss or
+            damage.
+          </p>
+
+          <p>
+            You may also be entitled to have goods repaired or replaced if
+            they fail to be of acceptable quality and the failure does not
+            amount to a major failure.
+          </p>
+
+          <p>
+            These rights may apply beyond any voluntary warranty period.
+          </p>
+
+          <p>
+            For more information about Australian Consumer Law and consumer
+            guarantees, please refer to the Australian Competition and
+            Consumer Commission (ACCC).
+          </p>
+        </div>
+
+
+        <div className="legal-contact">
+
+          <p className="eyebrow">
+            CONTACT
+          </p>
+
+          <h2>
+            Questions about returns or refunds?
+          </h2>
+
+          <p>
+            Bespoke Moment Trading<br />
+            PO Box 971, North Adelaide SA 5006, Australia
+          </p>
+
+          <p>
+            <a href="mailto:hello@bespokemoment.com">
+              hello@bespokemoment.com
+            </a>
+          </p>
+
+        </div>
+
+      </section>
+
+    </main>
+  )
+}
+function WarrantyPage() {
+  return (
+    <main className="legal-page">
+
+      <section className="legal-hero">
+        <h1>
+          Warranty
+        </h1>
+
+        <p className="legal-updated">
+          Last updated: 31 August 2026
+        </p>
+      </section>
+
+
+      <section className="legal-content">
+
+        <div className="legal-section">
+          <h2>1. Manufacturing Warranty</h2>
+
+          <p>
+            Every Bespoke Moment item is inspected before dispatch.
+          </p>
+
+          <p>
+            Bespoke Moment provides a
+            <strong> 12-month manufacturing warranty</strong> for Custom
+            Jewellery, beginning on the date of completion.
+          </p>
+
+          <p>
+            This voluntary warranty covers confirmed defects arising from
+            materials or workmanship during normal and appropriate use.
+          </p>
+
+          <p>
+            This warranty is provided in addition to, and does not replace,
+            rights available under the Australian Consumer Law.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>2. What the Warranty Covers</h2>
+
+          <p>
+            Covered issues may include:
+          </p>
+
+          <ul>
+            <li>defective soldering or structural workmanship;</li>
+            <li>faulty clasps, hinges or findings;</li>
+            <li>a stone setting defect caused by workmanship;</li>
+            <li>a loose stone resulting from a confirmed manufacturing defect;</li>
+            <li>a structural defect in the ring, band, chain or setting;</li>
+            <li>plating or finishing defects present at the time of delivery.</li>
+          </ul>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>3. Remedies Under This Warranty</h2>
+
+          <p>
+            If a covered manufacturing defect is confirmed, Bespoke Moment
+            will provide an appropriate remedy.
+          </p>
+
+          <p>
+            Depending on the circumstances, this may include:
+          </p>
+
+          <ul>
+            <li>repair;</li>
+            <li>replacement of the defective component;</li>
+            <li>replacement of the item;</li>
+            <li>another agreed solution.</li>
+          </ul>
+
+          <p>
+            Covered warranty remedies will be provided without charge where
+            applicable under this warranty.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>4. What the Warranty Does Not Cover</h2>
+
+          <p>
+            This warranty does not cover:
+          </p>
+
+          <ul>
+            <li>normal wear and tear, scratches or polishing marks;</li>
+            <li>fading or wear of plating;</li>
+            <li>damage caused by impact, dropping or accident;</li>
+            <li>chipped, cracked or broken diamonds or gemstones;</li>
+            <li>loss or theft;</li>
+            <li>damage from chemicals, cleaning products, perfume or cosmetics;</li>
+            <li>damage from exercise, sport or manual work;</li>
+            <li>incorrect ring size provided by the customer;</li>
+            <li>damage caused by repairs performed by another jeweller;</li>
+            <li>misuse or neglect.</li>
+          </ul>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>5. Ring Resizing</h2>
+
+          <p>
+            Ring resizing is not automatically included under this warranty.
+          </p>
+
+          <p>
+            Where the customer provided an incorrect ring size, resizing and
+            shipping charges may apply.
+          </p>
+
+          <p>
+            Certain designs, including full eternity bands, tension settings
+            and heavily engraved bands, may not be safely resized.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>6. How to Make a Warranty Claim</h2>
+
+          <p>
+            Please contact us with:
+          </p>
+
+          <ul>
+            <li>your full name and order number;</li>
+            <li>date of delivery;</li>
+            <li>a clear description of the issue;</li>
+            <li>photographs and/or videos of the problem.</li>
+          </ul>
+
+          <p>
+            Please do not send jewellery back without first receiving return
+            instructions from Bespoke Moment.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>7. Australian Consumer Law</h2>
+
+          <p>
+            Our goods come with guarantees that cannot be excluded under the
+            Australian Consumer Law.
+          </p>
+
+          <p>
+            Nothing in this warranty is intended to exclude, restrict or
+            modify any rights or remedies available to you under applicable law.
+          </p>
+
+          <p>
+            You may be entitled to a replacement or refund for a major failure,
+            as well as other remedies available under the Australian Consumer
+            Law.
+          </p>
+
+          <p>
+            Consumer rights may apply beyond this voluntary warranty period.
+          </p>
+        </div>
+
+
+        <div className="legal-contact">
+
+          <p className="eyebrow">
+            CONTACT
+          </p>
+
+          <h2>
+            Need help with a warranty claim?
+          </h2>
+
+          <p>
+            Bespoke Moment Trading<br />
+            PO Box 971, North Adelaide SA 5006, Australia
+          </p>
+
+          <p>
+            <a href="mailto:hello@bespokemoment.com">
+              hello@bespokemoment.com
+            </a>
+          </p>
+
+        </div>
+
+      </section>
+
+    </main>
+  )
+}
+
+function PrivacyPage() {
+  return (
+    <main className="legal-page">
+
+      <section className="legal-hero">
+        <h1>
+          Privacy Policy
+        </h1>
+
+        <p className="legal-updated">
+          Last updated: 31 August 2026
+        </p>
+      </section>
+
+
+      <section className="legal-content">
+
+        <div className="legal-section">
+          <h2>1. About This Policy</h2>
+
+          <p>
+            This Privacy Policy explains how Bespoke Moment collects, uses,
+            stores and discloses personal information when you visit our
+            website, submit an enquiry, place a custom jewellery order or
+            otherwise communicate with us.
+          </p>
+
+          <p>
+            In this policy, “we”, “us” and “our” refer to Bespoke Moment.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>2. Information We Collect</h2>
+
+          <p>
+            Depending on how you interact with us, we may collect information
+            including:
+          </p>
+
+          <ul>
+            <li>your name;</li>
+            <li>email address;</li>
+            <li>phone number;</li>
+            <li>billing and shipping details;</li>
+            <li>information provided in custom jewellery enquiries;</li>
+            <li>design references, images or files submitted for an enquiry;</li>
+            <li>order and transaction information;</li>
+            <li>communications between you and Bespoke Moment;</li>
+            <li>device, browser and IP address information;</li>
+            <li>information about how you interact with our website.</li>
+          </ul>
+
+          <p>
+            Payment information may be processed by the relevant payment
+            provider. We do not intentionally store complete payment card
+            details on our own systems.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>3. How We Collect Information</h2>
+
+          <p>
+            We may collect personal information when you:
+          </p>
+
+          <ul>
+            <li>submit an enquiry through our website;</li>
+            <li>contact us by email or other authorised communication channels;</li>
+            <li>request a personalised quotation;</li>
+            <li>place or manage a custom jewellery order;</li>
+            <li>communicate with us about your order or jewellery;</li>
+            <li>browse or interact with our website.</li>
+          </ul>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>4. How We Use Your Information</h2>
+
+          <p>
+            We may use personal information to:
+          </p>
+
+          <ul>
+            <li>respond to enquiries and provide customer support;</li>
+            <li>prepare personalised quotations;</li>
+            <li>communicate about custom jewellery designs and specifications;</li>
+            <li>process and fulfil orders;</li>
+            <li>arrange payment, production and delivery;</li>
+            <li>maintain business and transaction records;</li>
+            <li>improve our website, services and customer experience;</li>
+            <li>detect and prevent fraud, misuse or security issues;</li>
+            <li>comply with applicable legal and regulatory requirements.</li>
+          </ul>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>5. Custom Designs and Uploaded Files</h2>
+
+          <p>
+            When you submit inspiration images, sketches, design references or
+            other files for a custom jewellery enquiry, we may use that
+            information to understand your requirements, prepare your
+            quotation and develop your requested jewellery.
+          </p>
+
+          <p>
+            Please only submit files and information that you are authorised
+            to share with us.
+          </p>
+
+          <p>
+            We may retain submitted materials for as long as reasonably
+            necessary to provide our services, maintain business records,
+            resolve disputes and comply with legal obligations.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>6. How We Disclose Information</h2>
+
+          <p>
+            We may disclose personal information where reasonably necessary to
+            provide our services, including to:
+          </p>
+
+          <ul>
+            <li>jewellery manufacturers and craftsmen involved in your custom order;</li>
+            <li>payment providers;</li>
+            <li>couriers and delivery providers;</li>
+            <li>website, hosting, form or technology service providers;</li>
+            <li>professional advisers or service providers where reasonably required;</li>
+            <li>government authorities or other parties where required or authorised by law.</li>
+          </ul>
+
+          <p>
+            Information may be shared with service providers located in
+            Australia, China or other jurisdictions where necessary to provide
+            the services described above.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>7. Email and Website Services</h2>
+
+          <p>
+            Enquiry information submitted through our website may be processed
+            by third-party website and form service providers in order to
+            receive, store and deliver submissions to Bespoke Moment.
+          </p>
+
+          <p>
+            Business correspondence sent to
+            <strong> hello@bespokemoment.com</strong> may be forwarded through
+            our email routing service to our designated business email account.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>8. Marketing and Communications</h2>
+
+          <p>
+            We may use your contact information to communicate with you about
+            your enquiry, quotation, order or other direct business
+            interactions.
+          </p>
+
+          <p>
+            Where we send promotional communications, you may opt out where
+            applicable by following the unsubscribe instructions provided in
+            the communication or by contacting us.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>9. Cookies and Website Analytics</h2>
+
+          <p>
+            Our website and third-party services may use cookies or similar
+            technologies to support website functionality, understand website
+            usage and improve the customer experience.
+          </p>
+
+          <p>
+            The information collected may include browser type, device
+            information, IP address, pages visited and interactions with the
+            website.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>10. Security</h2>
+
+          <p>
+            We take reasonable steps to protect personal information against
+            misuse, interference, loss and unauthorised access, modification
+            or disclosure.
+          </p>
+
+          <p>
+            No internet transmission or electronic storage system can be
+            guaranteed to be completely secure.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>11. Retention</h2>
+
+          <p>
+            We retain personal information only for as long as reasonably
+            necessary for the purposes described in this policy, including to
+            provide services, maintain business records, resolve disputes and
+            comply with legal obligations.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>12. Access and Correction</h2>
+
+          <p>
+            Depending on applicable law, you may request access to personal
+            information we hold about you and ask us to correct information
+            that is inaccurate or incomplete.
+          </p>
+
+          <p>
+            To make a privacy-related request, please contact us using the
+            details below.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>13. Privacy Concerns</h2>
+
+          <p>
+            If you have concerns about how we handle your personal information,
+            please contact us first so that we can investigate and respond to
+            your concern.
+          </p>
+
+          <p>
+            You may also have the right to make a complaint to the relevant
+            privacy regulator where applicable.
+          </p>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>14. Changes to This Policy</h2>
+
+          <p>
+            We may update this Privacy Policy from time to time.
+          </p>
+
+          <p>
+            The updated version will be published on this website together
+            with the revised “Last updated” date.
+          </p>
+        </div>
+
+
+        <div className="legal-contact">
+
+          <p className="eyebrow">
+            CONTACT
+          </p>
+
+          <h2>
+            Questions about privacy?
+          </h2>
+
+          <p>
+            Bespoke Moment Trading<br />
+            PO Box 971, North Adelaide SA 5006, Australia
+          </p>
+
+          <p>
+            <strong>
+              Email:
+            </strong>{' '}
+            <a href="mailto:hello@bespokemoment.com">
+              hello@bespokemoment.com
+            </a>
+          </p>
+
+        </div>
+
+      </section>
+
+    </main>
+  )
+}
+
 function HomePage() {
   const [formStatus, setFormStatus] = useState('idle')
 const handleEnquirySubmit = async (event) => {
@@ -254,13 +1611,10 @@ const handleEnquirySubmit = async (event) => {
   setFormStatus('submitting')
 
   try {
-    const response = await fetch(
-      'https://bespoke-moment-website.netlify.app/',
-      {
-        method: 'POST',
-        body: formData,
-      }
-    )
+    const response = await fetch('/', {
+      method: 'POST',
+      body: formData,
+    })
 
     if (!response.ok) {
       throw new Error(`Form submission failed: ${response.status}`)
@@ -321,57 +1675,6 @@ const handleEnquirySubmit = async (event) => {
           <a href="#process" className="text-link">
             Discover our process →
           </a>
-        </section>
-
-        <section
-          className="homepage-gallery"
-          aria-label="Bespoke Moment jewellery inspiration"
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: '24px',
-            padding: '0 6vw 80px'
-          }}
-        >
-          <div
-            style={{
-              flex: '1 1 360px',
-              minHeight: '420px',
-              overflow: 'hidden'
-            }}
-          >
-            <img
-              src={homepageImages.collection.image}
-              alt={homepageImages.collection.alt}
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                display: 'block'
-              }}
-              loading="lazy"
-            />
-          </div>
-
-          <div
-            style={{
-              flex: '1 1 360px',
-              minHeight: '420px',
-              overflow: 'hidden'
-            }}
-          >
-            <img
-              src={homepageImages.diamonds.image}
-              alt={homepageImages.diamonds.alt}
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                display: 'block'
-              }}
-              loading="lazy"
-            />
-          </div>
         </section>
 
         <section className="categories">
@@ -446,8 +1749,282 @@ const handleEnquirySubmit = async (event) => {
               </a>
             </div>
           </article>
-        </section>
+</section>
 
+
+{/* =================================================
+    HOW IT WORKS
+    ================================================= */}
+
+<section
+  className="process"
+  id="process"
+>
+
+<div className="process-header">
+
+  <p className="process-title">
+    HOW IT WORKS
+  </p>
+
+  <h2>
+    Creating your custom jewellery.
+  </h2>
+
+</div>
+
+
+  <div className="process-list">
+
+    <article className="process-item">
+
+      <div className="process-number">
+        01
+      </div>
+
+      <div className="process-content">
+
+        <h3>
+          Share Your Inspiration
+        </h3>
+
+        <p>
+          Tell us what you have in mind by sharing a design,
+          inspiration image, stone type, metal or size.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article className="process-item">
+
+      <div className="process-number">
+        02
+      </div>
+
+      <div className="process-content">
+
+        <h3>
+          Receive Your Personalised Quote
+        </h3>
+
+        <p>
+          We'll prepare a personalised quote based on your design,
+          materials, stone selection and budget.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article className="process-item">
+
+      <div className="process-number">
+        03
+      </div>
+
+      <div className="process-content">
+
+        <h3>
+          Confirm Your Order
+        </h3>
+
+        <p>
+          Once you're happy with your quote, we'll send you a secure
+          checkout link. A 70% deposit is required to begin production.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article className="process-item">
+
+      <div className="process-number">
+        04
+      </div>
+
+      <div className="process-content">
+
+        <h3>
+          Design Review & Crafting
+        </h3>
+
+        <p>
+          We'll prepare your digital design for review in approximately
+          7 business days. Once approved, production begins and your
+          jewellery is handcrafted in approximately 15 business days.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article className="process-item">
+
+      <div className="process-number">
+        05
+      </div>
+
+      <div className="process-content">
+
+        <h3>
+          Final Review & Shipping
+        </h3>
+
+        <p>
+          We'll share detailed photos and videos for your final review.
+          Once approved, the remaining 30% balance is due and your
+          jewellery will be carefully packaged and shipped with tracking.
+        </p>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+<section
+  className="about-v3"
+  id="about"
+>
+
+  <div className="about-v3-header">
+
+    <p className="eyebrow">
+      ABOUT BESPOKE MOMENT
+    </p>
+
+    <div className="about-v3-title">
+      <h2>Our Story</h2>
+
+      <p>
+        Hi, I'm Tiana, the founder of Bespoke Moment.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div className="about-v3-story">
+
+    <div className="about-v3-text">
+
+      <p>
+        I grew up in Guangzhou, China — home to one of the world's major
+        jewellery manufacturing and wholesale hubs.
+      </p>
+
+      <p>
+        In 2024, I married my husband in Australia. Like many couples,
+        finding our engagement ring and wedding bands became one of the
+        most exciting parts of planning our wedding.
+      </p>
+
+      <p>
+        I had always imagined an elegant 18K gold engagement ring with a
+        beautiful diamond. My husband wanted a platinum wedding band with
+        a row of diamonds. But after searching online and in-store across
+        Australia, we realised the designs we loved were often far beyond
+        our budget.
+      </p>
+
+      <p>
+        That's when I had an idea. Having grown up in Guangzhou, I knew
+        there was another option: working directly with trusted jewellery
+        manufacturers and experienced craftsmen instead of following the
+        traditional retail chain.
+      </p>
+
+      <p>
+        We created the rings we had imagined — fully customised, beautifully
+        made, and at significantly better value. We saved more than 30%
+        compared with similar rings we had seen in Australian retail stores.
+      </p>
+
+      <p>
+        That experience changed how I thought about buying jewellery.
+        It also became the reason I created <em>Bespoke Moment.</em>
+      </p>
+
+     <p>
+  Today, we work directly with trusted manufacturers and experienced
+  craftsmen to create personalised jewellery for meaningful moments —
+  from engagement rings, wedding bands and bespoke gifts to Executive
+  &amp; Corporate Custom Jewellery Gifting.
+</p>
+
+      <p>
+        For individuals, that means creating something that feels personal
+        and meaningful. For businesses, it means creating jewellery around
+        a company, an occasion, a milestone or the people being celebrated.
+      </p>
+
+    </div>
+
+
+<div className="about-v3-images">
+
+  <div className="about-v3-image about-v3-image-main">
+    <img
+      src="/portfolio-images/story-picture-1.jpg"
+      alt="Bespoke Moment story"
+      loading="lazy"
+    />
+  </div>
+
+  <div className="about-v3-image about-v3-image-secondary">
+    <img
+      src="/portfolio-images/story-picture-2.jpg"
+      alt="Bespoke Moment jewellery story"
+      loading="lazy"
+    />
+  </div>
+
+</div>
+
+  </div>
+
+
+  <div className="about-v3-mission">
+
+    <div className="about-v3-mission-label">
+      <p className="eyebrow">
+        OUR MISSION
+      </p>
+    </div>
+
+    <div className="about-v3-mission-content">
+
+      <h3>
+        Custom jewellery should feel personal,
+        approachable and worth it.
+      </h3>
+
+      <p>
+        Whether you're creating something for yourself, someone you love,
+        or a business milestone, every piece starts with a conversation.
+        We'll help you find the right balance between design,
+        craftsmanship, materials and budget.
+      </p>
+
+      <div className="about-v3-signoff">
+        — Tiana<br />
+        Founder, Bespoke Moment
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
        <section
   className="cta enquiry-section"
   id="contact"
@@ -652,6 +2229,171 @@ const handleEnquirySubmit = async (event) => {
     </button>
   </form>
 </section>
+{/* =================================================
+    FAQ
+    ================================================= */}
+
+<section
+  className="faq"
+  id="faq"
+>
+
+  <div className="faq-header">
+    <p className="faq-title">
+      FAQ
+    </p>
+
+    <h2>
+      Frequently asked questions.
+    </h2>
+  </div>
+
+
+  <div className="faq-list">
+
+    {/* FAQ 01 */}
+    <details className="faq-item">
+
+      <summary>
+        <span className="faq-number">01</span>
+
+        <span className="faq-question">
+          Can I customise a piece from an inspiration image?
+        </span>
+
+        <span className="faq-icon">+</span>
+      </summary>
+
+      <div className="faq-answer">
+        <p>
+          Yes. You can send us inspiration images, sketches or existing
+          designs, and we'll help turn your ideas into a personalised piece.
+        </p>
+      </div>
+
+    </details>
+
+
+    {/* FAQ 02 */}
+    <details className="faq-item">
+
+      <summary>
+        <span className="faq-number">02</span>
+
+        <span className="faq-question">
+          Do I need to choose my diamond or gemstone first?
+        </span>
+
+        <span className="faq-icon">+</span>
+      </summary>
+
+      <div className="faq-answer">
+        <p>
+          No. Tell us your preferred shape, size, colour or budget and we'll
+          help you explore suitable diamond or gemstone options.
+        </p>
+      </div>
+
+    </details>
+
+
+    {/* FAQ 03 */}
+    <details className="faq-item">
+
+      <summary>
+        <span className="faq-number">03</span>
+
+        <span className="faq-question">
+          How long does a custom piece take?
+        </span>
+
+        <span className="faq-icon">+</span>
+      </summary>
+
+      <div className="faq-answer">
+        <p>
+          Digital design preparation usually takes approximately 7 business
+          days after your deposit. Once the design is approved, production
+          generally takes around 15 business days. Shipping time is additional.
+        </p>
+      </div>
+
+    </details>
+
+
+    {/* FAQ 04 */}
+    <details className="faq-item">
+
+      <summary>
+        <span className="faq-number">04</span>
+
+        <span className="faq-question">
+          How does payment work?
+        </span>
+
+        <span className="faq-icon">+</span>
+      </summary>
+
+      <div className="faq-answer">
+        <p>
+          A 70% deposit is required to begin a custom order. The remaining
+          30% balance is due after the finished piece has been reviewed and
+          approved, before dispatch.
+        </p>
+      </div>
+
+    </details>
+
+
+    {/* FAQ 05 */}
+    <details className="faq-item">
+
+      <summary>
+        <span className="faq-number">05</span>
+
+        <span className="faq-question">
+          Can I review the design before production?
+        </span>
+
+        <span className="faq-icon">+</span>
+      </summary>
+
+      <div className="faq-answer">
+        <p>
+          Yes. We'll provide a digital design for your review before
+          production begins.
+        </p>
+      </div>
+
+    </details>
+
+
+    {/* FAQ 06 */}
+    <details className="faq-item">
+
+      <summary>
+        <span className="faq-number">06</span>
+
+        <span className="faq-question">
+          Do you ship to Australia and New Zealand?
+        </span>
+
+        <span className="faq-icon">+</span>
+      </summary>
+
+      <div className="faq-answer">
+        <p>
+          Yes. Bespoke Moment is focused on serving customers across
+          Australia and New Zealand, with tracked shipping arranged after
+          your piece has been completed and approved.
+        </p>
+      </div>
+
+    </details>
+
+  </div>
+
+</section>
       </main>
     </>
   )
@@ -659,6 +2401,28 @@ const handleEnquirySubmit = async (event) => {
 
 function App() {
   const [page, setPage] = useState(getPageFromHash())
+
+  const pathname = window.location.pathname
+
+  const isTermsPage =
+    pathname === '/terms' ||
+    pathname === '/terms/'
+
+const isShippingPage =
+  pathname === '/shipping' ||
+  pathname === '/shipping/'
+
+const isRefundsPage =
+  pathname === '/refunds' ||
+  pathname === '/refunds/'
+
+const isWarrantyPage =
+  pathname === '/warranty' ||
+  pathname === '/warranty/'
+
+const isPrivacyPage =
+  pathname === '/privacy' ||
+  pathname === '/privacy/'
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -679,35 +2443,111 @@ function App() {
       behavior: 'smooth'
     })
   }
+const goToHomeSection = (section) => {
+  if (window.location.pathname !== '/') {
+    window.location.href = `/#${section}`
+    return
+  }
 
-  return (
-    <div className="site">
-      <div className="announcement">
-        Custom jewellery • Crafted with trusted manufacturers in Guangzhou & Shenzhen • Service focused in Australia & New Zealand
-      </div>
+  window.history.pushState(null, '', `/#${section}`)
+
+  requestAnimationFrame(() => {
+    const target = document.getElementById(section)
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  })
+}
+useEffect(() => {
+  const section = window.location.hash.replace('#', '')
+
+  if (!section) {
+    return
+  }
+
+  if (page !== 'home') {
+    return
+  }
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      const target = document.getElementById(section)
+
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }
+    })
+  })
+}, [page])
+
+return (
+  <div className="site">
 
       <header className="header">
-        <a href="#" className="logo">
+        <a href="/" className="logo">
           BESPOKE MOMENT
         </a>
 
-        <nav className="nav">
-          <a href="#portfolio-engagement">ENGAGEMENT RINGS</a>
-          <a href="#portfolio-wedding">WEDDING BANDS</a>
-          <a href="#portfolio-jewellery">GIFT JEWELLERY</a>
-          <a
-            href={page === 'home' ? '#process' : '#'}
-            onClick={page !== 'home' ? goHome : undefined}
-          >
-            HOW IT WORKS
-          </a>
-          <a
-            href={page === 'home' ? '#about' : '#'}
-            onClick={page !== 'home' ? goHome : undefined}
-          >
-            ABOUT US
-          </a>
-        </nav>
+<nav className="nav">
+
+  <a
+    href="/#portfolio-engagement"
+    onClick={(e) => {
+      e.preventDefault()
+      goToHomeSection('portfolio-engagement')
+    }}
+  >
+    ENGAGEMENT RINGS
+  </a>
+
+  <a
+    href="/#portfolio-wedding"
+    onClick={(e) => {
+      e.preventDefault()
+      goToHomeSection('portfolio-wedding')
+    }}
+  >
+    WEDDING BANDS
+  </a>
+
+  <a
+    href="/#portfolio-jewellery"
+    onClick={(e) => {
+      e.preventDefault()
+      goToHomeSection('portfolio-jewellery')
+    }}
+  >
+    GIFT JEWELLERY
+  </a>
+
+  <a
+    href="/#process"
+    onClick={(e) => {
+      e.preventDefault()
+      goToHomeSection('process')
+    }}
+  >
+    HOW IT WORKS
+  </a>
+
+  <a
+    href="/#about"
+    onClick={(e) => {
+      e.preventDefault()
+      goToHomeSection('about')
+    }}
+  >
+    ABOUT US
+  </a>
+
+</nav>
 
         <button className="menu-button" aria-label="Open menu">
           <span></span>
@@ -716,18 +2556,34 @@ function App() {
         </button>
       </header>
 
-      {page === 'home' && <HomePage />}
+{isTermsPage ? (
+  <TermsPage />
+) : isShippingPage ? (
+  <ShippingPage />
+) : isRefundsPage ? (
+  <RefundsPage />
+) : isWarrantyPage ? (
+  <WarrantyPage />
+) : isPrivacyPage ? (
+  <PrivacyPage />
+) : (
+  <>
+    {page === 'home' && <HomePage />}
 
-      {page !== 'home' && (
-        <PortfolioPage
-          type={page}
-          onHome={goHome}
-        />
-      )}
+    {page !== 'home' && (
+      <PortfolioPage
+        type={page}
+        onHome={goHome}
+      />
+    )}
+  </>
+)}
 
       <footer className="footer">
         <div className="footer-brand">
-          <div className="logo">BESPOKE MOMENT</div>
+          <a href="/" className="logo">
+  BESPOKE MOMENT
+</a>
           <p>
             Custom Diamond Rings Without Retail Markup.<br />
             Craftsmanship based in China.<br />
@@ -735,19 +2591,49 @@ function App() {
           </p>
         </div>
 
-        <div className="footer-column">
-          <h4>SHOP</h4>
-          <a href="#portfolio-engagement">Engagement Rings</a>
-          <a href="#portfolio-wedding">Wedding Bands</a>
-          <a href="#portfolio-jewellery">Gift Jewellery</a>
-        </div>
+       <div className="footer-column">
+  <h4>ABOUT</h4>
 
-        <div className="footer-column">
-          <h4>ABOUT</h4>
-          <a href="#process" onClick={page !== 'home' ? goHome : undefined}>How It Works</a>
-          <a href="#about" onClick={page !== 'home' ? goHome : undefined}>Why Bespoke Moment</a>
-          <a href="#contact" onClick={page !== 'home' ? goHome : undefined}>Contact</a>
-        </div>
+  <a
+    href="/#process"
+    onClick={(e) => {
+      e.preventDefault()
+      goToHomeSection('process')
+    }}
+  >
+    How It Works
+  </a>
+
+  <a
+    href="/#about"
+    onClick={(e) => {
+      e.preventDefault()
+      goToHomeSection('about')
+    }}
+  >
+    Why Bespoke Moment
+  </a>
+
+  <a
+    href="/#contact"
+    onClick={(e) => {
+      e.preventDefault()
+      goToHomeSection('contact')
+    }}
+  >
+    Contact
+  </a>
+</div>
+
+<div className="footer-column">
+  <h4>LEGAL</h4>
+
+  <a href="/warranty">Warranty</a>
+  <a href="/refunds">Refunds & Returns</a>
+  <a href="/shipping">Shipping Policy</a>
+  <a href="/terms">Terms & Conditions</a>
+  <a href="/privacy">Privacy Policy</a>
+</div>
 
         <div className="footer-column">
           <h4>FOLLOW</h4>
