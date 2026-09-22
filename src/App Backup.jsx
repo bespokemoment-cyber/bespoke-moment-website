@@ -7,339 +7,105 @@ const portfolioData = {
     title: 'Engagement Rings',
     intro: 'A selection of custom engagement rings created around different stones, styles and personal ideas.',
     note: 'Previous custom pieces are shown for design inspiration and reference only.',
-projects: [
-  {
-    slug: 'custom-engagement-ring-01',
-    title: 'Custom Oval Diamond Engagement Ring',
-    meta: 'Oval diamond • 18K white gold',
-    image: '/portfolio-images/engagement-ring-01.jpg',
-    alt: 'Custom oval diamond engagement ring',
+    projects: [
 
-    description:
-      'A luxurious custom design featuring diamonds surrounding the centre stone and a fully diamond-set outer band.',
+     {
+  slug: 'custom-engagement-ring-01',
+  title: 'Custom Oval Diamond Engagement Ring',
+  meta: 'Oval diamond • 18K gold',
+  image: '/portfolio-images/engagement-ring-01.jpg',
+  alt: 'Custom oval diamond engagement ring',
+  description:
+    'This is a past custom-made piece shown for design inspiration and price reference only.',
 
-    referencePrice: 'AUD $4,780',
+  referencePrice: 'AUD $4,500',
 
-    specs: [
-      ['Metal', '18K Gold'],
-      ['Centre Stone', '3.00ct Lab-Grown Diamond'],
-      ['Shape', 'Oval'],
-      ['Setting', 'Bespoke Setting'],
-      ['Style', 'Engagement Ring'],
-      ['Ring Size', 'AU J/2']
-    ],
-
-    story:
-      'The client had a clear vision for an oval diamond and wanted a more luxurious statement style, with a budget of around AUD $5,000. We specially selected a loose diamond for her, then worked with our jeweller to create the setting according to her preferred design.',
-
-    others: 'IGI Certified Centre Stone'
-  },
-
-  {
-    slug: 'custom-oval-three-stone-engagement-ring',
-    title: 'Custom Oval Three-Stone Diamond Engagement Ring',
-    meta: 'Oval diamond • 18K yellow gold',
-    image: '/portfolio-images/engagement-ring-02.jpg',
-    alt: 'Custom oval three-stone diamond engagement ring',
-
-    description:
-      'An elegant three-stone design featuring an oval centre diamond with pear-shaped side stones in a warm yellow gold setting.',
-
-    referencePrice: 'AUD $3,690',
-
-    specs: [
-      ['Metal', '18K Yellow Gold'],
-      ['Centre Stone', '1.50ct Lab-Grown Oval Diamond'],
-      ['Side Stones', 'Two Pear-Shaped Diamonds, 3.2mm × 4.7mm'],
-      ['Shape', 'Oval & Pear'],
-      ['Setting', 'Bespoke Setting'],
-      ['Style', 'Engagement Ring'],
-      ['Ring Size', 'AU J']
-    ],
-
-    story:
-      'The client had her preferred oval diamond and a specific design in mind, with a budget of under AUD $4,000. We specially selected the loose diamond for her, then worked with our jeweller to create the setting according to her requested style.',
-
-    others: 'IGI Certified Centre Stone'
-  },
-
-  {
-    slug: 'custom-oval-diamond-engagement-ring-03',
-    title: 'Custom Oval Diamond Engagement Ring',
-    meta: 'Oval diamond • 18K yellow gold',
-    image: '/portfolio-images/engagement-ring-03.jpg',
-    alt: 'Custom oval diamond engagement ring in 18K yellow gold',
-
-    description:
-      'A classic and elegant design centred around a statement oval diamond.',
-
-    referencePrice: 'AUD $3,890',
-
-    specs: [
-      ['Metal', '18K Yellow Gold'],
-      ['Centre Stone', '3.50ct Lab-Grown Diamond, F/VVS2'],
-      ['Shape', 'Oval'],
-      ['Setting', 'Bespoke Setting'],
-      ['Style', 'Engagement Ring'],
-      ['Ring Size', 'AU K']
-    ],
-
-    story:
-      'The client had her preferred oval diamond and a specific style in mind, with a budget of around AUD $4,000. We specially selected the loose diamond for her, then worked with our jeweller to create the setting according to her requested design.',
-
-    others: 'IGI Certified Centre Stone'
-  },
-
-  {
-    slug: 'custom-yellow-diamond-three-stone-engagement-ring',
-    title: 'Custom Yellow Diamond Three-Stone Engagement Ring',
-    meta: 'Radiant diamond • 14K white gold',
-    image: '/portfolio-images/engagement-ring-04.jpg',
-    alt: 'Custom yellow radiant three-stone engagement ring',
-
-    description:
-      'A distinctive three-stone engagement ring featuring a yellow radiant-cut centre diamond and contrasting side stones.',
-
-    referencePrice: 'AUD $3,290',
-
-    specs: [
-      ['Metal', '14K White Gold'],
-      ['Centre Stone', '3.00ct Lab-Grown Yellow Diamond'],
-      ['Side Stones', 'Two Trilliant Diamonds, 4.0 × 4.0mm'],
-      ['Shape', 'Radiant & Trilliant'],
-      ['Setting', 'Bespoke Setting'],
-      ['Style', 'Engagement Ring'],
-      ['Ring Size', 'AU K']
-    ],
-
-    story:
-      'The client wanted a yellow diamond and ultimately chose a radiant-cut three-stone design, with a budget of around AUD $3,000. We specially selected the loose centre diamond, then worked with our jeweller to create the setting according to her chosen design.',
-
-    others: 'IGI Certified Centre Stone'
-  },
-
-  {
-    slug: 'custom-round-diamond-engagement-ring',
-    title: 'Custom Round Diamond Engagement Ring',
-    meta: 'Round diamond • 18K white gold',
-    image: '/portfolio-images/engagement-ring-05.jpg',
-    alt: 'Custom round diamond engagement ring',
-
-    description:
-      'A classic custom design featuring a round centre diamond with a luxurious diamond-set setting.',
-
-    referencePrice: 'AUD $3,980',
-
-    specs: [
-      ['Metal', '18K White Gold'],
-      ['Centre Stone', '1.00ct Lab-Grown Diamond'],
-      ['Shape', 'Round'],
-      ['Setting', 'Bespoke Setting'],
-      ['Style', 'Engagement Ring'],
-      ['Ring Size', 'AU K']
-    ],
-
-    story:
-      'The client chose a round diamond and preferred a more classic style, with a budget of around AUD $4,000. We specially selected the loose diamond for her, then worked with our jeweller to create the setting according to her preferred design.',
-
-    others: 'IGI Certified Centre Stone'
-  },
-
-  {
-    slug: 'custom-square-cut-green-diamond-ring',
-    title: 'Custom Square-Cut Green Diamond Ring',
-    meta: 'Square-cut green diamond • 18K yellow gold',
-    image: '/portfolio-images/engagement-ring-06.jpg',
-    alt: 'Custom square-cut green diamond ring in 18K yellow gold',
-
-    description:
-      "A bespoke ring created from the client's own hand-drawn design.",
-
-    referencePrice: 'AUD $3,680',
-
-    specs: [
-      ['Metal', '18K Yellow Gold'],
-      ['Centre Stone', '1.00ct Lab-Grown Green Diamond'],
-      ['Shape', 'Square-Cut'],
-      ['Setting', 'Bespoke Setting'],
-      ['Style', 'Engagement Ring'],
-      ['Ring Size', 'AU I']
-    ],
-
-    story:
-      'The client provided her own hand-drawn design and requested a very specific style. We specially selected the loose diamond, developed a 3D digital version of the design for review, and then worked with our jeweller to produce the final piece.',
-
-    others: 'IGI Certified Centre Stone'
-  }
+specs: [
+  ['Metal', '18K Gold'],
+  ['Centre Stone', '3 carats Lab-Grown Diamond'],
+  ['Shape', 'Oval'],
+  ['Setting', 'Bespoke Setting'],
+  ['Style', 'Engagement Ring'],
+  ['Ring Size', 'AU J/2']
 ]
+},
+
+      {
+        title: 'Custom Engagement Ring',
+        meta: 'Oval diamond • Bespoke setting',
+        image: '/portfolio-images/engagement-ring-02.jpg',
+        alt: 'Custom oval diamond engagement ring'
+      },
+      {
+        title: 'Custom Engagement Ring',
+        meta: 'Oval diamond • Diamond-set band',
+        image: '/portfolio-images/engagement-ring-03.jpg',
+        alt: 'Custom oval diamond engagement ring'
+      },
+      {
+        title: 'Custom Engagement Ring',
+        meta: 'Yellow diamond • Bespoke setting',
+        image: '/portfolio-images/engagement-ring-04.jpg',
+        alt: 'Custom yellow diamond engagement ring'
+      },
+      {
+        title: 'Custom Engagement Ring',
+        meta: 'Round diamond • Halo setting',
+        image: '/portfolio-images/engagement-ring-05.jpg',
+        alt: 'Custom round halo engagement ring'
+      },
+      {
+        title: 'Custom Engagement Ring',
+        meta: 'Emerald cut • Diamond-set design',
+        image: '/portfolio-images/engagement-ring-06.jpg',
+        alt: 'Custom emerald cut engagement ring'
+      }
+    ]
   },
 
   wedding: {
     eyebrow: 'FOR TWO',
     title: 'Wedding Bands',
-    intro: 'Wedding bands designed to work together in your own way.',
+    intro: 'Matching, complementary or completely different — wedding bands designed to work together in your own way.',
     note: 'Previous custom pieces are shown for design inspiration and reference only.',
     projects: [
-  {
-    slug: 'custom-matching-wedding-bands-01',
-    title: 'Custom Matching Wedding Bands',
-    meta: '18K rose gold • Natural diamond-set design',
-    image: '/portfolio-images/wedding-band-01.jpg',
-    alt: 'Custom matching rose gold wedding bands',
-
-    description:
-      "A matching pair of rose gold wedding bands with a graceful serpent-inspired design. The women's band features a diamond-set outer band, paired with a coordinating men's band.",
-
-    referencePrice: "Women's: AUD $2,020\nMen's: AUD $2,380",
-
-    specs: [
-      ['Metal', '18K Rose Gold • Natural Diamonds'],
-      ['Setting', 'Bespoke Setting'],
-      ['Style', 'Matching Wedding Bands'],
-      ['Ring Size', "Women's AU J\nMen's AU R"]
-    ],
-
-    story:
-      'The client came to us with a specific design in mind and wanted a matching set created especially for them. We refined the details around their preferences and worked with our jeweller to turn the chosen design into a coordinated pair of rose gold wedding bands.',
-
-    others:
-      'Women’s ring approximately 4.5g; men’s ring approximately 9.5g. Metal prices fluctuate, so the reference price is for guidance only.'
-  },
-
-  {
-    slug: 'custom-matching-geometric-lines-wedding-bands',
-    title: 'Custom Matching Geometric Lines Wedding Bands',
-    meta: 'Platinum • Natural diamond-set design',
-    image: '/portfolio-images/wedding-band-02.jpg',
-    alt: 'Custom matching geometric platinum wedding bands',
-
-    description:
-      'A clean geometric lines design created for a professional couple, combining a refined look with an easy-to-wear style for everyday life.',
-
-    referencePrice: "Women's: AUD $1,790\nMen's: AUD $1,980",
-
-    specs: [
-      ['Metal', 'Platinum • Natural Diamonds'],
-      ['Setting', 'Bespoke Setting'],
-      ['Style', 'Matching Wedding Bands'],
-      ['Ring Size', "Women's AU I\nMen's AU P"]
-    ],
-
-    story:
-      'We created these matching wedding bands for a professional couple who wanted a clean and refined design that would complement their everyday style.',
-
-    others:
-      "Women's ring approximately 4g; men's ring approximately 8.5g. Metal prices fluctuate, so the reference price is for guidance only."
-  },
-
-  {
-    slug: 'custom-mens-diamond-wedding-band-01',
-    title: "Custom Men's Diamond Wedding Band",
-    meta: 'Platinum • Lab-grown diamond-set design',
-    image: '/portfolio-images/wedding-band-03.jpg',
-    alt: "Custom men's platinum diamond wedding band",
-
-    description:
-      'A refined men’s wedding band featuring a 1.00ct square-cut lab-grown diamond, balancing a clean profile with a distinctive, elevated look.',
-
-    referencePrice: 'AUD $2,865',
-
-    specs: [
-      ['Metal', 'Platinum • Lab-Grown Diamond'],
-      ['Centre Stone', '1.00ct Square-Cut Lab-Grown Diamond, D/VS2'],
-      ['Shape', 'Square-Cut'],
-      ['Setting', 'Bespoke Setting'],
-      ["Style", "Men's Wedding Band"],
-      ['Ring Size', 'AU P/2']
-    ],
-
-    story:
-      'The client wanted a wedding band featuring a diamond. We sourced this square-cut loose diamond and recommended a refined yet understated design to complement his personal style.',
-
-    others:
-      'Platinum weight approximately 10g. Metal prices fluctuate, so the reference price is for guidance only.'
-  },
-
-  {
-    slug: 'custom-mens-diamond-wedding-band-02',
-    title: "Custom Men's Diamond Wedding Band",
-    meta: 'Platinum • Lab-grown diamond-set design',
-    image: '/portfolio-images/wedding-band-04.jpg',
-    alt: "Custom men's platinum diamond-set wedding band",
-
-    description:
-      "A men's wedding band featuring a half-set diamond band, adding a distinctive touch while keeping the overall design clean and refined.",
-
-    referencePrice: 'AUD $1,960',
-
-    specs: [
-      ['Metal', 'Platinum • Lab-Grown Diamonds'],
-      ['Setting', 'Bespoke Setting'],
-      ["Style", "Men's Wedding Band"],
-      ['Ring Size', 'AU R']
-    ],
-
-    story:
-      'The client wanted to incorporate diamonds into his wedding band and came to us with a specific design. We translated his chosen style into a bespoke piece, keeping the half-set diamond detail distinctive while maintaining a clean overall profile.',
-
-    others:
-      'Platinum weight approximately 9.5g. Metal prices fluctuate, so the reference price is for guidance only.'
-  },
-
-  {
-    slug: 'custom-mens-natural-diamond-wedding-band',
-    title: "Custom Men's Natural Diamond Wedding Band",
-    meta: '18K white gold • 0.15ct natural diamond',
-    image: '/portfolio-images/wedding-band-05.jpg',
-    alt: "Custom men's 18K white gold natural diamond wedding band",
-
-    description:
-      'A clean men’s wedding band featuring a 0.15ct natural diamond.',
-
-    referencePrice: 'AUD $2,260',
-
-    specs: [
-      ['Metal', '18K White Gold • Natural Diamond'],
-      ['Centre Stone', '0.15ct Natural Diamond'],
-      ['Shape', 'Round'],
-      ['Setting', 'Bespoke Setting'],
-      ["Style", "Men's Wedding Band"],
-      ['Ring Size', 'AU P']
-    ],
-
-    story:
-      "Created as part of a matching wedding ring set for the client and his wife, this men's band keeps the design clean and refined, with a subtle 0.15ct natural diamond detail.",
-
-    others:
-      'Gold weight approximately 8.5g. Metal prices fluctuate, so the reference price is for guidance only.'
-  },
-
-  {
-    slug: 'custom-matching-natural-diamond-wedding-bands',
-    title: 'Custom Matching Natural Diamond Wedding Bands',
-    meta: '18K rose gold • Natural diamond',
-    image: '/portfolio-images/wedding-band-06.jpg',
-    alt: 'Custom matching rose gold natural diamond wedding bands',
-
-    description:
-      "A matching couple's wedding band set featuring a distinctive crossover design, with natural diamonds set into the women's band.",
-
-    referencePrice: "Women's: AUD $1,620\nMen's: AUD $1,870",
-
-    specs: [
-      ['Metal', '18K Rose Gold • Natural Diamonds'],
-      ['Setting', 'Bespoke Setting'],
-      ['Style', 'Matching Wedding Bands'],
-      ['Ring Size', "Women's AU J\nMen's AU Q"]
-    ],
-
-    story:
-      "Created for a couple looking for something a little more distinctive than a traditional matching set, these crossover bands feature a flowing design that connects the two rings while keeping each piece individual. Natural diamonds add a subtle touch of detail to the women's band.",
-
-    others:
-      "Women's ring approximately 3.7g; men's ring approximately 8.5g. Metal prices fluctuate, so the reference price is for guidance only."
-  }
-]
+      {
+        title: 'Custom Wedding Bands',
+        meta: '18K gold • Diamond-set band',
+        image: '/portfolio-images/wedding-band-01.jpg',
+        alt: 'Custom 18K gold diamond wedding bands'
+      },
+      {
+        title: 'Custom Wedding Bands',
+        meta: '18K gold • Geometric design',
+        image: '/portfolio-images/wedding-band-02.jpg',
+        alt: 'Custom geometric wedding bands'
+      },
+      {
+        title: 'Custom Wedding Band',
+        meta: 'White gold • Diamond detail',
+        image: '/portfolio-images/wedding-band-03.jpg',
+        alt: 'Custom white gold diamond wedding band'
+      },
+      {
+        title: 'Custom Wedding Band',
+        meta: 'White gold • Diamond-set design',
+        image: '/portfolio-images/wedding-band-04.jpg',
+        alt: 'Custom white gold diamond wedding band'
+      },
+      {
+        title: 'Custom Couple Rings',
+        meta: 'Wedding set • Diamond engagement ring',
+        image: '/portfolio-images/wedding-band-05.jpg',
+        alt: 'Custom couple wedding ring set'
+      },
+      {
+        title: 'Custom Wedding Band',
+        meta: '18K gold • Emerald detail',
+        image: '/portfolio-images/wedding-band-06.jpg',
+        alt: 'Custom 18K gold wedding band with green gemstone details'
+      }
+    ]
   },
 
   jewellery: {
@@ -347,164 +113,44 @@ projects: [
     title: 'Gift Jewellery',
     intro: 'Personalised jewellery for birthdays, anniversaries, milestones and the moments worth celebrating.',
     note: 'Custom pieces created for birthdays, anniversaries, milestones and the moments worth celebrating.',
-projects: [
-  {
-    slug: 'custom-18k-gold-diamond-halo-drop-earrings',
-    title: '18K Gold Diamond Halo Drop Earrings',
-    meta: '18K yellow gold • Natural diamonds',
-    image: '/portfolio-images/gift-jewellery-01.jpg',
-    alt: '18K gold natural diamond halo drop earrings',
-
-    description:
-      'Elegant 18K gold drop earrings featuring natural diamonds in a delicate halo design. The layered circular silhouette creates plenty of sparkle while giving the earrings a distinctive statement look.',
-
-    referencePrice: 'AUD $3,080',
-
-    specs: [
-      ['Metal', '18K Yellow Gold • Natural Diamonds'],
-      ['Style', 'Drop Earrings'],
-      ['Design', 'Halo'],
-      ['Weight', 'Approx. 5.8g']
-    ],
-
-    story:
-      'A refined statement piece created around a layered halo design, combining the warmth of 18K yellow gold with the sparkle of natural diamonds.',
-
-    others:
-      'This piece is shown as a past design for inspiration and price reference. We have access to a broad range of jewellery designs and can customise selected pieces. For more design options, please contact us or follow @bespokemoment.co on Instagram and TikTok.'
-  },
-
-  {
-    slug: 'custom-18k-gold-essential-chain-necklace',
-    title: 'Custom 18K Gold Essential Chain Necklace',
-    meta: '18K yellow or white gold • Everyday chain',
-    image: '/portfolio-images/gift-jewellery-02.jpg',
-    alt: 'Custom 18K gold everyday chain necklace',
-
-    description:
-      'A versatile 18K gold chain designed to be worn on its own, paired with a pendant or layered with another chain. Available in three lengths, with the 18-inch and 20-inch options especially suited to layering.',
-
-    referencePrice: 'AUD $750',
-
-    specs: [
-      ['Metal', '18K Yellow Gold or White Gold'],
-      ['Style', 'Everyday Chain Necklace'],
-      ['Length', 'S — 16" · M — 18" · L — 20"']
-    ],
-
-    story:
-      'Designed as an everyday essential, this versatile chain can be worn on its own or styled with a pendant. It also works beautifully as part of a layered look, giving customers an easy foundation for personalised jewellery combinations.',
-
-    others:
-      'The reference price is intended to reflect the base cost of the custom piece. Metal prices may fluctuate. This design is available in different lengths and can be customised according to your preferred style.'
-  },
-
-  {
-    slug: '18k-gold-2ct-lab-grown-emerald-cut-diamond-earrings',
-    title: '18K Gold 2ct Lab-Grown Emerald-Cut Diamond Earrings',
-    meta: '18K gold • Lab-grown emerald-cut diamonds',
-    image: '/portfolio-images/gift-jewellery-03.jpg',
-    alt: '18K gold lab-grown emerald-cut diamond earrings',
-
-    description:
-      'Elegant 18K gold earrings featuring a pair of 2.00ct lab-grown emerald-cut diamonds in a sleek, clean design. The elongated emerald cut and polished setting create a modern look with a strong sense of presence.',
-
-    referencePrice: 'AUD $7,800',
-
-    specs: [
-      ['Metal', '18K Yellow Gold or White Gold'],
-      ['Centre Stones', '2.00ct Lab-Grown Emerald-Cut Diamonds (Each)'],
-      ['Style', 'Statement Earrings'],
-      ['Weight', 'Approx. 4.7g']
-    ],
-
-    story:
-      'Created for a clean and modern look, this design focuses on the elongated lines of emerald-cut diamonds and the simplicity of a polished 18K gold setting.',
-
-    others:
-      'This piece is shown as a past design for inspiration and price reference. We have access to a broad range of jewellery designs and can customise selected pieces. For more design options, please contact us or follow @bespokemoment.co on Instagram and TikTok.'
-  },
-
-  {
-    slug: 'custom-18k-gold-camellia-earrings',
-    title: 'Custom 18K Gold Camellia Earrings',
-    meta: '18K yellow gold • Natural diamond',
-    image: '/portfolio-images/gift-jewellery-04.jpg',
-    alt: 'Custom 18K gold camellia earrings with natural diamonds',
-
-    description:
-      'A custom camellia-inspired design crafted entirely in 18K yellow gold, with a small natural diamond set at the centre of each flower.',
-
-    referencePrice: 'AUD $960',
-
-    specs: [
-      ['Metal', '18K Yellow Gold • Natural Diamonds'],
-      ['Style', 'Stud Earrings'],
-      ['Design', 'Camellia'],
-      ['Weight', 'Approx. 2.5g']
-    ],
-
-    story:
-      'The client came to us with a specific camellia-inspired design and asked us to customise the piece in 18K yellow gold. A small natural diamond was set at the centre of each flower to complete the design.',
-
-    others:
-      'Custom-made to the client’s selected design. This piece is shown for design inspiration and price reference only. Metal prices may fluctuate.'
-  },
-
-  {
-    slug: 'custom-marquise-lab-grown-diamond-ring',
-    title: 'Custom Marquise Lab-Grown Diamond Ring',
-    meta: 'Lab-grown marquise diamond • 9K gold',
-    image: '/portfolio-images/gift-jewellery-05.jpg',
-    alt: 'Custom marquise lab-grown diamond ring in 9K gold',
-
-    description:
-      'A versatile marquise diamond ring designed for everyday wear. Developed with a younger, contemporary audience in mind, this piece offers a light-luxury feel and can be customised in different gold colours, making it a thoughtful option for birthdays, graduations and other milestones.',
-
-    referencePrice: 'AUD $899',
-
-    specs: [
-      ['Metal', '9K Gold'],
-      ['Centre Stone', '0.50ct Lab-Grown Marquise Diamond'],
-      ['Shape', 'Marquise'],
-      ['Style', 'Everyday Ring'],
-      ['Ring Size', 'Custom Size Available']
-    ],
-
-    story:
-      'Created as an easy-to-wear everyday piece for younger women, this design combines a soft marquise shape with a clean, versatile silhouette. It was developed with gifting occasions such as 21st birthdays and graduations in mind, while allowing the gold colour and ring size to be customised.',
-
-    others:
-      'This is a custom-made piece and ring size must be provided before production. Approximate production time is 10–15 business days, followed by approximately 7–15 business days for air delivery. Please allow sufficient time when ordering a custom piece.'
-  },
-
-  {
-    slug: 'custom-18k-gold-diamond-stud-earrings',
-    title: 'Custom 18K Gold Diamond Stud Earrings',
-    meta: '18K gold • Natural diamonds',
-    image: '/portfolio-images/gift-jewellery-06.jpg',
-    alt: 'Custom 18K gold natural diamond stud earrings',
-
-    description:
-      'A simple and versatile pair of diamond stud earrings designed for everyday wear. Created with a younger, modern aesthetic in mind, they make an easy choice for birthdays, graduations and other meaningful occasions.',
-
-    referencePrice: 'AUD $890',
-
-    specs: [
-      ['Metal', '18K Gold • Natural Diamonds'],
-      ['Centre Stones', '0.10ct / 0.10ct / 0.12ct'],
-      ['Shape', 'Round'],
-      ['Style', 'Diamond Stud Earrings'],
-      ['Weight', 'Approx. 2g']
-    ],
-
-    story:
-      'Designed as an everyday jewellery staple, this pair keeps the look simple and versatile while adding just enough sparkle for a polished finish. The design was developed with younger women in mind, making it especially suitable for gifting occasions such as birthdays and graduations.',
-
-    others:
-      'This piece is shown for design inspiration and price reference only. We have access to a broad range of jewellery designs and can customise selected pieces. For more designs, please contact us or follow @bespokemoment.co on Instagram and TikTok.'
-  }
-]
+    projects: [
+      {
+        title: 'Tiger-Inspired Gold Earrings',
+        meta: '18K gold • Statement design',
+        image: '/portfolio-images/gift-jewellery-01.jpg',
+        alt: '18K gold tiger-inspired hoop earrings'
+      },
+      {
+        title: 'Everyday Chain Necklace',
+        meta: '18K gold • White gold • Everyday wear',
+        image: '/portfolio-images/gift-jewellery-02.jpg',
+        alt: '18K gold and white gold chain necklaces'
+      },
+      {
+        title: '18K Gold O Pendant',
+        meta: '18K gold • Diamond detail',
+        image: '/portfolio-images/gift-jewellery-03.jpg',
+        alt: '18K gold O-shaped pendant necklace'
+      },
+      {
+        title: 'Camellia Gold Earrings',
+        meta: '18K gold • Floral design',
+        image: '/portfolio-images/gift-jewellery-04.jpg',
+        alt: '18K gold camellia flower stud earrings'
+      },
+      {
+        title: 'Mother-of-Pearl Pendant',
+        meta: 'Mother of pearl • Diamonds • 18K gold',
+        image: '/portfolio-images/gift-jewellery-05.jpg',
+        alt: 'Mother-of-pearl and diamond 18K gold pendant necklace'
+      },
+      {
+        title: 'Diamond Stud Earrings',
+        meta: 'Diamonds • 18K gold',
+        image: '/portfolio-images/gift-jewellery-06.jpg',
+        alt: 'Diamond stud earrings in 18K gold'
+      }
+    ]
   }
 }
 
@@ -713,41 +359,18 @@ function PortfolioDetailPage({ project, categoryTitle, onBack, onHome }) {
 
           </div>
 
-<div className="portfolio-detail-section portfolio-detail-price">
+          <div className="portfolio-detail-section portfolio-detail-price">
 
-  <h2>REFERENCE PRICE</h2>
+            <h2>REFERENCE PRICE</h2>
 
-  <p>
-  {project.referencePrice.split('\n').map((line, index) => (
-    <span key={index}>{line}</span>
-  ))}
-</p>
+            <p>{project.referencePrice}</p>
 
-  <small>
-    Reference pricing only. Final pricing varies based on
-    the selected gemstone, metal, specifications and design.
-  </small>
+            <small>
+              Reference pricing only. Final pricing varies based on
+              the selected gemstone, metal, specifications and design.
+            </small>
 
-</div>
-
-
-{project.story && (
-  <div className="portfolio-detail-section portfolio-detail-story">
-
-    <h2>THE STORY</h2>
-
-    <p>{project.story}</p>
-
-  </div>
-)}
-
-
-{project.certificate && (
-  <div className="portfolio-detail-section portfolio-detail-others">
-    <h2>OTHERS</h2>
-    <p>{project.certificate}</p>
-  </div>
-)}
+          </div>
 
           <div className="portfolio-detail-action">
             <a
@@ -2546,23 +2169,40 @@ const handleEnquirySubmit = async (event) => {
     <div className="about-v3-text">
 
       <p>
-        Our trusted manufacturing partners and jewellery specialists are based in Guangzhou and Shenzhen, two of China’s leading centres for fine jewellery craftsmanship.
+        Our trusted manufacturing partners and jewellery specialists are
+        based in Guangzhou and Shenzhen — two of China's leading centres
+        for fine jewellery craftsmanship.
       </p>
 
       <p>
-        As the founder, I regularly visit both cities to work closely with experienced jewellers, source quality gemstones, and oversee the production of our jewellery.
+        As the founder, I regularly travel between both cities to meet with
+        manufacturers, source exceptional gemstones, and work closely with
+        experienced jewellers who share our commitment to quality and detail.
       </p>
 
       <p>
-        We specialise in lab-grown diamond and precious metal jewellery, combining modern technology with skilled craftsmanship.
+        We specialise in lab-grown diamond and precious metal jewellery,
+        combining modern technology with skilled craftsmanship.
       </p>
 
       <p>
-        For certified lab-grown diamonds, we independently verify the IGI certificate against the selected stone before production begins. Before shipping, the precious metal is also tested by an independent institution in China to verify its stated purity.
+        Every certified lab-grown diamond we source is independently
+        verified through the IGI database before production begins, giving
+        our customers confidence that the certificate matches the diamond
+        they've selected.
       </p>
 
       <p>
-        By working closely with trusted manufacturing partners and overseeing key stages of production, we provide quality craftsmanship, transparent pricing, and personalised service — without traditional luxury retail markups.
+        Before any piece is shipped, the precious metal is also verified by
+        an independent testing institution in China to ensure it meets the
+        stated purity and quality standards.
+      </p>
+
+      <p>
+        By working directly with trusted manufacturers and carefully
+        overseeing every stage of the process, we're able to offer
+        beautifully crafted jewellery with transparent pricing — without
+        the traditional retail markup.
       </p>
 
     </div>
@@ -2593,20 +2233,14 @@ const handleEnquirySubmit = async (event) => {
 </div>
 
 
- {/* =====================================================
-    03 — BESPOKE FOR BUSINESS
-    ===================================================== */}
+  {/* =====================================================
+      03 — BESPOKE FOR BUSINESS
+      ===================================================== */}
 
 <div className="about-v3-business">
 
   <div className="about-v3-business-media">
-    <div className="about-v3-business-image">
-      <img
-        src="/portfolio-images/BM business designs.png"
-        alt="Executive and corporate custom jewellery gifting"
-        loading="lazy"
-      />
-    </div>
+
   </div>
 
   <div className="about-v3-business-content">
@@ -2615,9 +2249,17 @@ const handleEnquirySubmit = async (event) => {
       BESPOKE FOR BUSINESS
     </p>
 
-    <h3>
+    <div className="about-v3-business-image">
+      <img
+        src="/portfolio-images/BM business designs.png"
+        alt="Executive and corporate custom jewellery gifting"
+        loading="lazy"
+      />
+    </div>
+
+    <h4>
       Jewellery can celebrate more than personal moments.
-    </h3>
+    </h4>
 
     <p>
       Our custom approach also extends to businesses looking for a more
@@ -2653,9 +2295,9 @@ const handleEnquirySubmit = async (event) => {
 </div>
 
 
-{/* =====================================================
-    04 — MY MISSION
-    ===================================================== */}
+  {/* =====================================================
+      04 — MY MISSION
+      ===================================================== */}
 
 <div className="about-v3-mission">
 
@@ -2887,7 +2529,6 @@ const handleEnquirySubmit = async (event) => {
     </button>
   </form>
 </section>
-
 {/* =================================================
     FAQ
     ================================================= */}
@@ -3105,17 +2746,24 @@ const isPrivacyPage =
     })
   }
 const goToHomeSection = (section) => {
-  // If we're on another page, return to homepage first.
   if (window.location.pathname !== '/') {
     window.location.href = `/#${section}`
     return
   }
 
-  // Use the hash so React's existing hashchange
-  // listener updates the page state correctly.
-  window.location.hash = section
-}
+  window.history.pushState(null, '', `/#${section}`)
 
+  requestAnimationFrame(() => {
+    const target = document.getElementById(section)
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  })
+}
 useEffect(() => {
   const section = window.location.hash.replace('#', '')
 
@@ -3156,33 +2804,33 @@ return (
   onClick={(e) => {
     e.preventDefault()
     setMenuOpen(false)
-    window.location.href = '/#portfolio-engagement'
+    goToHomeSection('portfolio-engagement')
   }}
 >
-  ENGAGEMENT RINGS
-</a>
+    ENGAGEMENT RINGS
+  </a>
 
 <a
   href="/#portfolio-wedding"
   onClick={(e) => {
     e.preventDefault()
     setMenuOpen(false)
-    window.location.href = '/#portfolio-wedding'
+    goToHomeSection('portfolio-wedding')
   }}
 >
-  WEDDING BANDS
-</a>
+    WEDDING BANDS
+  </a>
 
-<a
+  <a
   href="/#portfolio-jewellery"
   onClick={(e) => {
     e.preventDefault()
     setMenuOpen(false)
-    window.location.href = '/#portfolio-jewellery'
+    goToHomeSection('portfolio-jewellery')
   }}
 >
-  GIFT JEWELLERY
-</a>
+    GIFT JEWELLERY
+  </a>
 
   <a
     href="/#process"
@@ -3237,7 +2885,7 @@ return (
     onBack={() => {
       window.location.href = `/#portfolio-${portfolioDetail.type}`
     }}
-    onHome={goHome}
+    onHome={() => goToHomeSection('contact')}
   />
 ) : (
   <>
