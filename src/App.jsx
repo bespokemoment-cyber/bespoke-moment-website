@@ -510,7 +510,7 @@ projects: [
 
 const homepageImages = {
   hero: {
-    image: '/portfolio-images/homepage-hero.jpg',
+    image: '/portfolio-images/homepage-hero.png',
     alt: 'Bespoke Moment fine jewellery collection'
   },
   collection: {
@@ -592,7 +592,6 @@ function PortfolioPage({ type, onHome }) {
           ← Back to home
         </button>
 
-        <p className="eyebrow">{data.eyebrow}</p>
         <h1>{data.title}</h1>
         <p className="portfolio-intro">{data.intro}</p>
         <p className="portfolio-note">{data.note}</p>
@@ -2123,6 +2122,511 @@ function PrivacyPage() {
   )
 }
 
+function AboutPage() {
+  return (
+    <section className="about-v3">
+      
+      {/* =====================================================
+          01 — OUR STORY
+          ===================================================== */}
+
+      <div className="about-v3-header">
+
+        <p className="eyebrow">
+          ABOUT BESPOKE MOMENT
+        </p>
+
+        <div className="about-v3-title">
+
+          <h2>
+            Our Story
+          </h2>
+
+          <p>
+            Hi, I'm Tiana, the founder of Bespoke Moment.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div className="about-v3-story">
+
+        <div className="about-v3-text">
+
+          <p>
+            I grew up in Guangzhou, China — home to one of the world's largest
+            jewellery manufacturing and wholesale hubs.
+          </p>
+
+          <p>
+            In 2024, I married my husband in Australia. Like many couples,
+            finding the perfect engagement ring and wedding bands was at the top
+            of our wedding checklist.
+          </p>
+
+          <p>
+            To us, our wedding rings were more than jewellery — they were a
+            symbol of one of the biggest moments of our lives.
+          </p>
+
+          <p>
+            After searching online and in-store across Australia, we quickly
+            realised our budget was very limited to what we wanted. We might
+            have had to break the bank to get what we wanted.
+          </p>
+
+          <p>
+            That's when I had an idea. Since I grew up in Guangzhou, why not
+            contact trusted manufacturers directly instead of paying traditional
+            retail prices?
+          </p>
+
+          <p>
+            We ended up with the rings we had dreamt of from the beginning —
+            crafted with exceptional quality, fully customised to our preferences,
+            and at a significantly better value. We saved more than 30% compared
+            with similar rings we had seen in retail stores.
+          </p>
+
+          <p>
+            That experience completely changed how I thought about buying
+            jewellery. Beautiful custom jewellery shouldn't have to come with
+            luxury retail markups.
+          </p>
+
+          <p>
+            That's why I created <em>Bespoke Moment.</em>
+          </p>
+
+          <p>
+            Today, we work directly with trusted jewellery manufacturers and
+            experienced craftsmen to create fully customised engagement rings,
+            wedding bands, anniversary gifts, and fine jewellery.
+          </p>
+
+        </div>
+
+
+        <div className="about-v3-images">
+
+          <div className="about-v3-image about-v3-image-main">
+            <img
+              src="/portfolio-images/story-picture-1.jpg"
+              alt="Bespoke Moment jewellery story"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="about-v3-image about-v3-image-secondary">
+            <img
+              src="/portfolio-images/story-picture-2.jpg"
+              alt="Bespoke Moment custom jewellery"
+              loading="lazy"
+            />
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* =====================================================
+          02 — CRAFTSMANSHIP & SOURCING
+          ===================================================== */}
+
+      <div className="about-v3-sourcing">
+
+        <div className="about-v3-sourcing-content">
+
+          <p className="eyebrow">
+            OUR CRAFTSMANSHIP &amp; SOURCING
+          </p>
+
+          <h4>
+            We don't simply source jewellery — we carefully select the people who make it.
+          </h4>
+
+          <div className="about-v3-text">
+
+            <p>
+              Our trusted manufacturing partners and jewellery specialists are
+              based in Guangzhou and Shenzhen, two of China’s leading centres
+              for fine jewellery craftsmanship.
+            </p>
+
+            <p>
+              As the founder, I regularly visit both cities to work closely with
+              experienced jewellers, source quality gemstones, and oversee the
+              production of our jewellery.
+            </p>
+
+            <p>
+              We specialise in lab-grown diamond and precious metal jewellery,
+              combining modern technology with skilled craftsmanship.
+            </p>
+
+            <p>
+              For certified lab-grown diamonds, we independently verify the IGI
+              certificate against the selected stone before production begins.
+              Before shipping, the precious metal is also tested by an independent
+              institution in China to verify its stated purity.
+            </p>
+
+            <p>
+              By working closely with trusted manufacturing partners and overseeing
+              key stages of production, we provide quality craftsmanship, transparent
+              pricing, and personalised service — without traditional luxury retail markups.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div className="about-v3-sourcing-media">
+
+          <div className="about-v3-sourcing-image">
+            <img
+              src="/portfolio-images/IGI证书现拍图.jpg"
+              alt="IGI certified lab-grown diamonds"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="about-v3-sourcing-image">
+            <img
+              src="/portfolio-images/大罗塘.jpg"
+              alt="Jewellery manufacturing and sourcing in Guangzhou"
+              loading="lazy"
+            />
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* =====================================================
+          03 — MY MISSION
+          ===================================================== */}
+
+      <div className="about-v3-mission">
+
+        <div className="about-v3-mission-label">
+          <p className="eyebrow">
+            MY MISSION IS SIMPLE
+          </p>
+        </div>
+
+        <div className="about-v3-mission-content">
+
+          <p className="about-v3-mission-statement">
+            To help customers create custom jewellery that feels uniquely theirs —
+            without sacrificing quality, design, or financial peace of mind.
+          </p>
+
+          <div className="about-v3-signoff">
+            Thank you for letting us be part of your story.
+            <br /><br />
+            — Tiana<br />
+            Founder, Bespoke Moment
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  )
+}
+function BusinessPage() {
+  return (
+    <main className="business-page">
+
+      {/* =====================================================
+          HERO
+          ===================================================== */}
+
+      <section className="business-hero">
+
+        <div className="business-hero-inner">
+
+          <a
+            href="/"
+            className="business-back-link"
+          >
+            ← Back to home
+          </a>
+
+          <p className="eyebrow">
+            BM FOR BUSINESS
+          </p>
+
+          <h1>
+            Turn Your Brand Story
+            <br />
+            Into Jewellery.
+          </h1>
+
+          <p className="business-hero-text">
+            Bespoke jewellery created for businesses, brands and
+            meaningful corporate moments.
+          </p>
+
+          <a
+            href="/#contact"
+            className="button button-dark business-main-button"
+          >
+            SUBMIT A BUSINESS ENQUIRY
+          </a>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          WHAT WE CREATE
+          ===================================================== */}
+
+      <section className="business-section business-services">
+
+        <div className="business-section-label">
+          <p className="eyebrow">
+            WHAT WE CREATE
+          </p>
+        </div>
+
+        <div className="business-service-grid">
+
+          <article className="business-service-item">
+
+            <span className="business-service-number">
+              01
+            </span>
+
+            <h2>
+              Executive Gifting
+            </h2>
+
+            <p>
+              Custom jewellery for executives, VIP clients and
+              business partners.
+            </p>
+
+          </article>
+
+
+          <article className="business-service-item">
+
+            <span className="business-service-number">
+              02
+            </span>
+
+            <h2>
+              Corporate Recognition
+            </h2>
+
+            <p>
+              Pieces created to celebrate achievements,
+              milestones and leadership.
+            </p>
+
+          </article>
+
+
+          <article className="business-service-item">
+
+            <span className="business-service-number">
+              03
+            </span>
+
+            <h2>
+              Brand &amp; Heritage
+            </h2>
+
+            <p>
+              Transform your brand identity, symbols or story
+              into jewellery.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          MATERIALS & PRODUCTION
+          ===================================================== */}
+
+      <section className="business-section business-materials">
+
+        <div className="business-section-label">
+          <p className="eyebrow">
+            MATERIALS &amp; PRODUCTION
+          </p>
+        </div>
+
+        <div className="business-material-grid">
+
+          <div className="business-material-item">
+
+            <h2>
+              Fine Gold
+            </h2>
+
+            <p className="business-material-main">
+              9K · 14K · 18K Gold
+            </p>
+
+            <p className="business-material-moq">
+              MOQ: 1 piece
+            </p>
+
+          </div>
+
+
+          <div className="business-material-item">
+
+            <h2>
+              More Accessible Options
+            </h2>
+
+            <p className="business-material-main">
+              Gold Vermeil
+            </p>
+
+            <p className="business-material-moq">
+              MOQ: 20 pieces
+            </p>
+
+          </div>
+
+
+          <div className="business-material-item">
+
+            <h2>
+              Gold-Plated Brass
+            </h2>
+
+            <p className="business-material-main">
+              Custom production
+            </p>
+
+            <p className="business-material-moq">
+              MOQ: 50 pieces
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          OUR PROCESS
+          ===================================================== */}
+
+      <section className="business-section business-process-section">
+
+        <div className="business-section-label">
+          <p className="eyebrow">
+            OUR PROCESS
+          </p>
+        </div>
+
+        <div className="business-process-grid">
+
+          <article className="business-process-item">
+
+            <span>
+              01
+            </span>
+
+            <h2>
+              Design
+            </h2>
+
+            <p>
+              7–10 business days
+            </p>
+
+          </article>
+
+
+          <article className="business-process-item">
+
+            <span>
+              02
+            </span>
+
+            <h2>
+              Production
+            </h2>
+
+            <p>
+              15–30 business days
+            </p>
+
+          </article>
+
+
+          <article className="business-process-item">
+
+            <span>
+              03
+            </span>
+
+            <h2>
+              Delivery
+            </h2>
+
+            <p>
+              Usually 7–20 business days
+              <br />
+              Air shipping
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          FINAL CTA
+          ===================================================== */}
+
+      <section className="business-final-cta">
+
+        <p className="eyebrow">
+          HAVE A CONCEPT IN MIND?
+        </p>
+
+        <h2>
+          Tell us about your business,
+          <br />
+          occasion or idea.
+        </h2>
+
+        <a
+          href="/#contact"
+          className="button button-dark"
+        >
+          SUBMIT A BUSINESS ENQUIRY
+        </a>
+
+      </section>
+
+    </main>
+  )
+}
 function HomePage() {
   const [formStatus, setFormStatus] = useState('idle')
 const handleEnquirySubmit = async (event) => {
@@ -2194,8 +2698,7 @@ const handleEnquirySubmit = async (event) => {
             without the traditional retail markup.
           </h2>
           <p>
-            Bespoke Moment connects you directly with trusted jewellery manufacturers in Guangzhou and Shenzhen,
-            allowing us to create beautifully made custom pieces with a more personal approach.
+            Our approach brings together thoughtful design, careful craftsmanship and personalised service, creating custom pieces that feel considered from the first idea to the finished jewellery.
           </p>
           <a href="#process" className="text-link">
             Discover our process →
@@ -2216,7 +2719,6 @@ const handleEnquirySubmit = async (event) => {
             </div>
 
             <div className="category-content">
-              <p className="eyebrow">CUSTOM JEWELLERY</p>
               <h3>Engagement Rings</h3>
               <p>
                 From a simple solitaire to a completely personalised design, created around the details that matter to you.
@@ -2240,7 +2742,6 @@ const handleEnquirySubmit = async (event) => {
             </div>
 
             <div className="category-content">
-              <p className="eyebrow">FOR TWO</p>
               <h3>Wedding Bands</h3>
               <p>
                 Matching or completely different — designed to work together in your own way.
@@ -2264,7 +2765,6 @@ const handleEnquirySubmit = async (event) => {
             </div>
 
             <div className="category-content">
-              <p className="eyebrow">SPECIAL MOMENTS</p>
               <h3>Gift Jewellery</h3>
               <p>
                 Thoughtful pieces for birthdays, anniversaries and all the moments worth celebrating.
@@ -2416,189 +2916,8 @@ const handleEnquirySubmit = async (event) => {
 
 </section>
 
-<section
-  className="about-v3"
-  id="about"
->
-
-  {/* =====================================================
-      01 — OUR STORY
-      ===================================================== */}
-
-  <div className="about-v3-header">
-
-    <p className="eyebrow">
-      ABOUT BESPOKE MOMENT
-    </p>
-
-    <div className="about-v3-title">
-
-      <h2>
-        Our Story
-      </h2>
-
-      <p>
-        Hi, I'm Tiana, the founder of Bespoke Moment.
-      </p>
-
-    </div>
-
-  </div>
-
-
-  <div className="about-v3-story">
-
-    <div className="about-v3-text">
-
-      <p>
-        I grew up in Guangzhou, China — home to one of the world's largest
-        jewellery manufacturing and wholesale hubs.
-      </p>
-
-      <p>
-        In 2024, I married my husband in Australia. Like many couples,
-        finding the perfect engagement ring and wedding bands was at the top
-        of our wedding checklist.
-      </p>
-
-      <p>
-        To us, our wedding rings were more than jewellery — they were a
-        symbol of one of the biggest moments of our lives.
-      </p>
-
-      <p>
-        After searching online and in-store across Australia, we quickly
-        realised our budget was very limited to what we wanted. We might
-        have had to break the bank to get what we wanted.
-      </p>
-
-      <p>
-        That's when I had an idea. Since I grew up in Guangzhou, why not
-        contact trusted manufacturers directly instead of paying traditional
-        retail prices?
-      </p>
-
-      <p>
-        We ended up with the rings we had dreamt of from the beginning —
-        crafted with exceptional quality, fully customised to our preferences,
-        and at a significantly better value. We saved more than 30% compared
-        with similar rings we had seen in retail stores.
-      </p>
-
-      <p>
-        That experience completely changed how I thought about buying
-        jewellery. Beautiful custom jewellery shouldn't have to come with
-        luxury retail markups.
-      </p>
-
-      <p>
-        That's why I created <em>Bespoke Moment.</em>
-      </p>
-
-      <p>
-        Today, we work directly with trusted jewellery manufacturers and
-        experienced craftsmen to create fully customised engagement rings,
-        wedding bands, anniversary gifts, and fine jewellery.
-      </p>
-
-    </div>
-
-
-    <div className="about-v3-images">
-
-      <div className="about-v3-image about-v3-image-main">
-        <img
-          src="/portfolio-images/story-picture-1.jpg"
-          alt="Bespoke Moment jewellery story"
-          loading="lazy"
-        />
-      </div>
-
-      <div className="about-v3-image about-v3-image-secondary">
-        <img
-          src="/portfolio-images/story-picture-2.jpg"
-          alt="Bespoke Moment custom jewellery"
-          loading="lazy"
-        />
-      </div>
-
-    </div>
-
-  </div>
-
-
-{/* =====================================================
-    02 — CRAFTSMANSHIP & SOURCING
-    ===================================================== */}
-
-<div className="about-v3-sourcing">
-
-  <div className="about-v3-sourcing-content">
-
-    <p className="eyebrow">
-      OUR CRAFTSMANSHIP &amp; SOURCING
-    </p>
-
-    <h4>
-      We don't simply source jewellery — we carefully select the people who make it.
-    </h4>
-
-    <div className="about-v3-text">
-
-      <p>
-        Our trusted manufacturing partners and jewellery specialists are based in Guangzhou and Shenzhen, two of China’s leading centres for fine jewellery craftsmanship.
-      </p>
-
-      <p>
-        As the founder, I regularly visit both cities to work closely with experienced jewellers, source quality gemstones, and oversee the production of our jewellery.
-      </p>
-
-      <p>
-        We specialise in lab-grown diamond and precious metal jewellery, combining modern technology with skilled craftsmanship.
-      </p>
-
-      <p>
-        For certified lab-grown diamonds, we independently verify the IGI certificate against the selected stone before production begins. Before shipping, the precious metal is also tested by an independent institution in China to verify its stated purity.
-      </p>
-
-      <p>
-        By working closely with trusted manufacturing partners and overseeing key stages of production, we provide quality craftsmanship, transparent pricing, and personalised service — without traditional luxury retail markups.
-      </p>
-
-    </div>
-
-  </div>
-
-
-  <div className="about-v3-sourcing-media">
-
-    <div className="about-v3-sourcing-image">
-      <img
-        src="/portfolio-images/IGI证书现拍图.jpg"
-        alt="IGI certified lab-grown diamonds"
-        loading="lazy"
-      />
-    </div>
-
-    <div className="about-v3-sourcing-image">
-      <img
-        src="/portfolio-images/大罗塘.jpg"
-        alt="Jewellery manufacturing and sourcing in Guangzhou"
-        loading="lazy"
-      />
-    </div>
-
-  </div>
-
-</div>
-
-
- {/* =====================================================
-    03 — BESPOKE FOR BUSINESS
-    ===================================================== */}
-
-<div className="about-v3-business">
-
+<section className="about-v3 about-business-home">
+  <div className="about-v3-business">
   <div className="about-v3-business-media">
     <div className="about-v3-business-image">
       <img
@@ -2641,42 +2960,12 @@ const handleEnquirySubmit = async (event) => {
       with us to create something made specifically for the occasion.
     </p>
 
-    <a
-      href="#contact"
-      className="text-link"
-    >
-      Discuss a corporate jewellery project →
-    </a>
-
-  </div>
-
-</div>
-
-
-{/* =====================================================
-    04 — MY MISSION
-    ===================================================== */}
-
-<div className="about-v3-mission">
-
-  <div className="about-v3-mission-label">
-    <p className="eyebrow">
-      MY MISSION IS SIMPLE
-    </p>
-  </div>
-
-  <div className="about-v3-mission-content">
-
-<p className="about-v3-mission-statement">
-  To help customers create custom jewellery, that feel uniquely theirs —
-  without sacrificing quality, design, or financial peace of mind.
-</p>
-    <div className="about-v3-signoff">
-      Thank you for letting us be part of your story.
-      <br /><br />
-      — Tiana<br />
-      Founder, Bespoke Moment
-    </div>
+<a
+  href="/business"
+  className="text-link"
+>
+  Explore Bespoke for Business →
+</a>
 
   </div>
 
@@ -2689,16 +2978,15 @@ const handleEnquirySubmit = async (event) => {
 
   <div className="enquiry-heading">
     <p className="eyebrow">
-      YOUR IDEA. YOUR JEWELLERY.
+      Tell us what you'd like to create.
     </p>
 
     <h3>
-      Ready to create<br />
-      something personal?
+  START YOUR ENQUIRY
     </h3>
 
     <p>
-      Tell us what you're looking for and we'll prepare a personalised quote
+      Tell us what you're looking for and we'll prepare a personalised quote and suitable options
       based on your ideas, preferences and budget.
     </p>
   </div>
@@ -2792,12 +3080,13 @@ const handleEnquirySubmit = async (event) => {
         <option value="engagement-ring">Engagement Ring</option>
         <option value="wedding-band">Wedding Band</option>
         <option value="gift-jewellery">Gift Jewellery</option>
+        <option value="business">Bespoke for Business</option>
         <option value="other">Other</option>
       </select>
     </div>
 
     <div className="form-field">
-      <label htmlFor="budget">Estimated budget <span>(optional)</span></label>
+      <label htmlFor="budget">ESTIMATED BUDGET / PROJECT BUDGET <span>(optional)</span></label>
       <input
         id="budget"
         name="budget"
@@ -2807,12 +3096,12 @@ const handleEnquirySubmit = async (event) => {
     </div>
 
     <div className="form-field">
-      <label htmlFor="message">Tell us about your idea <span>(optional)</span></label>
+      <label htmlFor="message">TELL US ABOUT YOUR IDEA OR PROJECT <span>(optional)</span></label>
       <textarea
         id="message"
         name="message"
         rows="6"
-        placeholder="Share your preferred style, stone, metal, size or anything else you'd like us to know."
+        placeholder="Tell us about your preferred design, occasion, materials, quantity or anything else you'd like us to know."
       />
     </div>
 
@@ -3085,6 +3374,14 @@ const isPrivacyPage =
   pathname === '/privacy' ||
   pathname === '/privacy/'
 
+const isBusinessPage =
+  pathname === '/business' ||
+  pathname === '/business/'
+
+const isAboutPage =
+  pathname === '/about' ||
+  pathname === '/about/'
+
   useEffect(() => {
     const handleHashChange = () => {
       setPage(getPageFromHash())
@@ -3184,6 +3481,10 @@ return (
   GIFT JEWELLERY
 </a>
 
+<a href="/business">
+  FOR BUSINESS
+</a>
+
   <a
     href="/#process"
     onClick={(e) => {
@@ -3194,15 +3495,9 @@ return (
     HOW IT WORKS
   </a>
 
-  <a
-    href="/#about"
-    onClick={(e) => {
-      e.preventDefault()
-      goToHomeSection('about')
-    }}
-  >
-    ABOUT US
-  </a>
+<a href="/about">
+  ABOUT US
+</a>
 
 </nav>
 
@@ -3230,6 +3525,10 @@ return (
   <WarrantyPage />
 ) : isPrivacyPage ? (
   <PrivacyPage />
+) : isBusinessPage ? (
+  <BusinessPage />
+) : isAboutPage ? (
+  <AboutPage />
 ) : portfolioDetail ? (
   <PortfolioDetailPage
     project={portfolioDetail.project}
@@ -3264,74 +3563,232 @@ return (
           </p>
         </div>
 
-       <div className="footer-column">
-  <h4>ABOUT</h4>
+{/* =====================================================
+    DESKTOP FOOTER
+    ===================================================== */}
 
-  <a
-    href="/#process"
-    onClick={(e) => {
-      e.preventDefault()
-      goToHomeSection('process')
-    }}
-  >
-    How It Works
-  </a>
+<div className="footer-desktop-columns">
 
-  <a
-    href="/#about"
-    onClick={(e) => {
-      e.preventDefault()
-      goToHomeSection('about')
-    }}
-  >
-    Why Bespoke Moment
-  </a>
+  <div className="footer-column">
+    <h4>ABOUT</h4>
 
-  <a
-    href="/#contact"
-    onClick={(e) => {
-      e.preventDefault()
-      goToHomeSection('contact')
-    }}
-  >
-    Contact
-  </a>
+    <a href="/about">
+      About Us
+    </a>
+
+    <a href="/#process">
+      How It Works
+    </a>
+
+    <a href="/business">
+      Bespoke for Business
+    </a>
+
+    <a href="/#contact">
+      Contact
+    </a>
+  </div>
+
+
+  <div className="footer-column">
+    <h4>JEWELLERY</h4>
+
+    <a href="/#portfolio-engagement">
+      Engagement Rings
+    </a>
+
+    <a href="/#portfolio-wedding">
+      Wedding Bands
+    </a>
+
+    <a href="/#portfolio-jewellery">
+      Gift Jewellery
+    </a>
+  </div>
+
+
+  <div className="footer-column">
+    <h4>LEGAL</h4>
+
+    <a href="/warranty">
+      Warranty
+    </a>
+
+    <a href="/refunds">
+      Refunds &amp; Returns
+    </a>
+
+    <a href="/shipping">
+      Shipping Policy
+    </a>
+
+    <a href="/terms">
+      Terms &amp; Conditions
+    </a>
+
+    <a href="/privacy">
+      Privacy Policy
+    </a>
+  </div>
+
+
+  <div className="footer-column">
+    <h4>FOLLOW</h4>
+
+    <a
+      href="https://www.instagram.com/bespokemoment.co/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Instagram
+    </a>
+
+    <a
+      href="https://www.tiktok.com/@bespokemoment"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      TikTok
+    </a>
+
+    <a
+      href="https://au.pinterest.com/BespokemMomentJewellery/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Pinterest
+    </a>
+  </div>
+
 </div>
 
-<div className="footer-column">
-  <h4>LEGAL</h4>
 
-  <a href="/warranty">Warranty</a>
-  <a href="/refunds">Refunds & Returns</a>
-  <a href="/shipping">Shipping Policy</a>
-  <a href="/terms">Terms & Conditions</a>
-  <a href="/privacy">Privacy Policy</a>
+{/* =====================================================
+    MOBILE FOOTER ACCORDION
+    ===================================================== */}
+
+<div className="footer-mobile-accordion">
+
+  <details>
+    <summary>
+      HELP &amp; SUPPORT
+    </summary>
+
+    <div className="footer-mobile-links">
+
+      <a href="/about">
+        About Us
+      </a>
+
+      <a href="/#process">
+        How It Works
+      </a>
+
+      <a href="/warranty">
+        Warranty
+      </a>
+
+      <a href="/refunds">
+        Refunds &amp; Returns
+      </a>
+
+      <a href="/shipping">
+        Shipping Policy
+      </a>
+
+      <a href="/terms">
+        Terms &amp; Conditions
+      </a>
+
+      <a href="/privacy">
+        Privacy Policy
+      </a>
+
+    </div>
+  </details>
+
+
+  <details>
+    <summary>
+      GET IN TOUCH
+    </summary>
+
+    <div className="footer-mobile-links">
+
+      <a href="/#contact">
+        Contact
+      </a>
+
+      <a href="/business">
+        Bespoke for Business
+      </a>
+
+      <a href="mailto:hello@bespokemoment.com">
+        hello@bespokemoment.com
+      </a>
+
+    </div>
+  </details>
+
+
+  <details>
+    <summary>
+      JEWELLERY
+    </summary>
+
+    <div className="footer-mobile-links">
+
+      <a href="/#portfolio-engagement">
+        Engagement Rings
+      </a>
+
+      <a href="/#portfolio-wedding">
+        Wedding Bands
+      </a>
+
+      <a href="/#portfolio-jewellery">
+        Gift Jewellery
+      </a>
+
+    </div>
+  </details>
+
+
+  <details>
+    <summary>
+      SOCIALS
+    </summary>
+
+    <div className="footer-mobile-links">
+
+      <a
+        href="https://www.instagram.com/bespokemoment.co/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+
+      <a
+        href="https://www.tiktok.com/@bespokemoment"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        TikTok
+      </a>
+
+      <a
+        href="https://au.pinterest.com/BespokemMomentJewellery/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Pinterest
+      </a>
+
+    </div>
+  </details>
+
 </div>
-
-<div className="footer-column">
-<h4>FOLLOW</h4>
-<a
-  href="https://www.instagram.com/bespokemoment.co/"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Instagram
-</a>
-<a
-  href="https://www.tiktok.com/@bespokemoment"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  TikTok
-</a>
-<a
-  href="https://au.pinterest.com/BespokemMomentJewellery/"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Pinterest
-</a>
-        </div>
 
         <div className="footer-bottom">
           <span>© 2026 Bespoke Moment</span>
