@@ -536,11 +536,29 @@ const homepageImages = {
 }
 
 function getPageFromHash() {
+  const pathname = window.location.pathname.replace(/\/+$/, '')
   const hash = window.location.hash
 
-  if (hash === '#portfolio-engagement') return 'engagement'
-  if (hash === '#portfolio-wedding') return 'wedding'
-  if (hash === '#portfolio-jewellery') return 'jewellery'
+  if (
+    pathname === '/portfolio-engagement' ||
+    hash === '#portfolio-engagement'
+  ) {
+    return 'engagement'
+  }
+
+  if (
+    pathname === '/portfolio-wedding' ||
+    hash === '#portfolio-wedding'
+  ) {
+    return 'wedding'
+  }
+
+  if (
+    pathname === '/portfolio-jewellery' ||
+    hash === '#portfolio-jewellery'
+  ) {
+    return 'jewellery'
+  }
 
   return 'home'
 }
@@ -2632,10 +2650,19 @@ function HomePage() {
 const handleEnquirySubmit = async (event) => {
   event.preventDefault()
 
-  const form = event.currentTarget
-  const formData = new FormData(form)
+const form = event.currentTarget
+const formData = new FormData(form)
 
-  formData.set('form-name', 'enquiry')
+const attachment = form.querySelector('#attachment')?.files?.[0]
+
+const MAX_FILE_SIZE = 6 * 1024 * 1024
+
+if (attachment && attachment.size > MAX_FILE_SIZE) {
+  setFormStatus('error')
+  return
+}
+
+formData.set('form-name', 'enquiry')
 
   setFormStatus('submitting')
 
@@ -3118,7 +3145,7 @@ const handleEnquirySubmit = async (event) => {
   />
 
   <small>
-    Upload one image or PDF with your inspiration or reference design.
+    Upload one image or PDF with your inspiration or reference design. Maximum file size: 6 MB.
   </small>
 </div>
 
@@ -3161,11 +3188,11 @@ const handleEnquirySubmit = async (event) => {
       </p>
     )}
 
-    {formStatus === 'error' && (
-      <p className="form-status form-status-error" role="alert">
-        Something went wrong while sending your enquiry. Please try again or email us directly.
-      </p>
-    )}
+{formStatus === 'error' && (
+  <p className="form-status form-status-error" role="alert">
+    Something went wrong while sending your enquiry. Please check your attachment is under 6 MB and try again. You can also email us directly.
+  </p>
+)}
 
     <button
       type="submit"
@@ -3449,34 +3476,22 @@ return (
 <nav className={`nav ${menuOpen ? 'nav-open' : ''}`}>
 
 <a
-  href="/#portfolio-engagement"
-  onClick={(e) => {
-    e.preventDefault()
-    setMenuOpen(false)
-    window.location.href = '/#portfolio-engagement'
-  }}
+  href="/portfolio-engagement"
+  onClick={() => setMenuOpen(false)}
 >
   ENGAGEMENT RINGS
 </a>
 
 <a
-  href="/#portfolio-wedding"
-  onClick={(e) => {
-    e.preventDefault()
-    setMenuOpen(false)
-    window.location.href = '/#portfolio-wedding'
-  }}
+  href="/portfolio-wedding"
+  onClick={() => setMenuOpen(false)}
 >
   WEDDING BANDS
 </a>
 
 <a
-  href="/#portfolio-jewellery"
-  onClick={(e) => {
-    e.preventDefault()
-    setMenuOpen(false)
-    window.location.href = '/#portfolio-jewellery'
-  }}
+  href="/portfolio-jewellery"
+  onClick={() => setMenuOpen(false)}
 >
   GIFT JEWELLERY
 </a>
