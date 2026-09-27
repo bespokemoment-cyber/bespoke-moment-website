@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 const portfolioData = {
-  engagement: {
-    eyebrow: 'CUSTOM JEWELLERY',
-    title: 'Engagement Rings',
-    intro: 'A selection of custom engagement rings created around different stones, styles and personal ideas.',
-    note: 'Previous custom pieces are shown for design inspiration and reference only.',
+engagement: {
+  eyebrow: 'CUSTOM ENGAGEMENT RINGS',
+  title: 'Custom Engagement Rings',
+  intro: 'Explore custom engagement ring designs created around your choice of diamond, metal and setting — from classic solitaires to distinctive bespoke designs.',
+  note: 'Previous custom pieces are shown for design inspiration and reference only.', 
 projects: [
   {
     slug: 'custom-engagement-ring-01',
@@ -175,10 +175,10 @@ projects: [
   },
 
   wedding: {
-    eyebrow: 'FOR TWO',
-    title: 'Wedding Bands',
-    intro: 'Wedding bands designed to work together in your own way.',
-    note: 'Previous custom pieces are shown for design inspiration and reference only.',
+  eyebrow: 'CUSTOM WEDDING RINGS',
+  title: 'Custom Wedding Rings & Bands',
+  intro: 'Explore custom wedding rings and bands designed around your style, from matching couple bands to personalised diamond-set and classic designs.',
+  note: 'Previous custom pieces are shown for design inspiration and reference only.',
     projects: [
   {
     slug: 'custom-matching-wedding-bands-01',
@@ -343,10 +343,10 @@ projects: [
   },
 
   jewellery: {
-    eyebrow: 'SPECIAL MOMENTS',
-    title: 'Gift Jewellery',
-    intro: 'Personalised jewellery for birthdays, anniversaries, milestones and the moments worth celebrating.',
-    note: 'Custom pieces created for birthdays, anniversaries, milestones and the moments worth celebrating.',
+  eyebrow: 'CUSTOM JEWELLERY',
+  title: 'Custom Jewellery',
+  intro: 'Explore custom jewellery designed for birthdays, anniversaries, milestones and the moments worth celebrating — from personalised pendants and earrings to fine jewellery pieces.',
+  note: 'Selected pieces may be available as ready-made jewellery. Availability should be confirmed before purchase.',
 projects: [
   {
     slug: 'custom-18k-gold-diamond-halo-drop-earrings',
@@ -536,29 +536,18 @@ const homepageImages = {
 }
 
 function getPageFromHash() {
-  const pathname = window.location.pathname.replace(/\/+$/, '')
   const hash = window.location.hash
+  const pathname = window.location.pathname.replace(/\/+$/, '') || '/'
 
-  if (
-    pathname === '/portfolio-engagement' ||
-    hash === '#portfolio-engagement'
-  ) {
-    return 'engagement'
-  }
+  // SEO-friendly portfolio URLs
+  if (pathname === '/portfolio-engagement') return 'engagement'
+  if (pathname === '/portfolio-wedding') return 'wedding'
+  if (pathname === '/portfolio-jewellery') return 'jewellery'
 
-  if (
-    pathname === '/portfolio-wedding' ||
-    hash === '#portfolio-wedding'
-  ) {
-    return 'wedding'
-  }
-
-  if (
-    pathname === '/portfolio-jewellery' ||
-    hash === '#portfolio-jewellery'
-  ) {
-    return 'jewellery'
-  }
+  // Existing homepage hash URLs
+  if (hash === '#portfolio-engagement') return 'engagement'
+  if (hash === '#portfolio-wedding') return 'wedding'
+  if (hash === '#portfolio-jewellery') return 'jewellery'
 
   return 'home'
 }
@@ -660,13 +649,12 @@ function PortfolioPage({ type, onHome }) {
         <p>
           Send us an inspiration image, sketch or simply tell us what you're looking for.
         </p>
-        <a
-          href="#contact"
-          className="button button-dark"
-          onClick={onHome}
-        >
-          START YOUR ENQUIRY
-        </a>
+       <a
+  href="/#contact"
+  className="button button-dark"
+>
+  START YOUR ENQUIRY
+</a>
       </section>
     </div>
   )
@@ -766,15 +754,14 @@ function PortfolioDetailPage({ project, categoryTitle, onBack, onHome }) {
   </div>
 )}
 
-          <div className="portfolio-detail-action">
-            <a
-              href="#contact"
-              className="button button-dark"
-              onClick={onHome}
-            >
-              START YOUR ENQUIRY
-            </a>
-          </div>
+<div className="portfolio-detail-action">
+  <a
+    href="/#contact"
+    className="button button-dark"
+  >
+    START YOUR ENQUIRY
+  </a>
+</div>
 
         </div>
 
@@ -3420,14 +3407,62 @@ const isAboutPage =
       window.removeEventListener('hashchange', handleHashChange)
     }
   }, [])
+  useEffect(() => {
+  const seoData = {
+    home: {
+      title: 'Bespoke Moment | Custom Jewellery Australia',
+      description:
+        'Bespoke Moment creates custom engagement rings, wedding bands and fine jewellery, with craftsmanship based in China and service focused in Australia and New Zealand.'
+    },
 
-  const goHome = () => {
-    window.location.hash = ''
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
+    engagement: {
+      title: 'Custom Engagement Rings Australia | Bespoke Moment',
+      description:
+        'Explore custom engagement rings by Bespoke Moment, from oval and three-stone designs to personalised settings and lab-grown diamond rings.'
+    },
+
+    wedding: {
+      title: 'Custom Wedding Rings & Bands Australia | Bespoke Moment',
+      description:
+        'Explore custom wedding rings and bands by Bespoke Moment, including matching couple rings, diamond-set bands and personalised wedding designs.'
+    },
+
+    jewellery: {
+      title: 'Custom Jewellery Australia | Bespoke Moment',
+      description:
+        'Explore custom jewellery by Bespoke Moment, including personalised earrings, pendants, necklaces and fine jewellery created around your ideas.'
+    }
   }
+
+  const current = seoData[page] || seoData.home
+
+  document.title = current.title
+
+  let description = document.querySelector(
+    'meta[name="description"]'
+  )
+
+  if (!description) {
+    description = document.createElement('meta')
+    description.setAttribute('name', 'description')
+    document.head.appendChild(description)
+  }
+
+  description.setAttribute('content', current.description)
+}, [page])
+
+const goHome = () => {
+  if (window.location.pathname !== '/') {
+    window.location.href = '/'
+    return
+  }
+
+  window.location.hash = ''
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
 const goToHomeSection = (section) => {
   // If we're on another page, return to homepage first.
   if (window.location.pathname !== '/') {
@@ -3608,17 +3643,17 @@ return (
   <div className="footer-column">
     <h4>JEWELLERY</h4>
 
-    <a href="/#portfolio-engagement">
-      Engagement Rings
-    </a>
+<a href="/portfolio-engagement">
+  Engagement Rings
+</a>
 
-    <a href="/#portfolio-wedding">
-      Wedding Bands
-    </a>
+<a href="/portfolio-wedding">
+  Wedding Bands
+</a>
 
-    <a href="/#portfolio-jewellery">
-      Gift Jewellery
-    </a>
+<a href="/portfolio-jewellery">
+  Gift Jewellery
+</a>
   </div>
 
 
@@ -3753,17 +3788,17 @@ return (
 
     <div className="footer-mobile-links">
 
-      <a href="/#portfolio-engagement">
-        Engagement Rings
-      </a>
+<a href="/portfolio-engagement">
+  Engagement Rings
+</a>
 
-      <a href="/#portfolio-wedding">
-        Wedding Bands
-      </a>
+<a href="/portfolio-wedding">
+  Wedding Bands
+</a>
 
-      <a href="/#portfolio-jewellery">
-        Gift Jewellery
-      </a>
+<a href="/portfolio-jewellery">
+  Gift Jewellery
+</a>
 
     </div>
   </details>
