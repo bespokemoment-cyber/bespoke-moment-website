@@ -3449,6 +3449,43 @@ const isAboutPage =
   }
 
   description.setAttribute('content', current.description)
+
+  const pathname =
+    window.location.pathname.replace(/\/+$/, '') || '/'
+
+  let canonicalPath = '/'
+
+  if (
+    pathname === '/portfolio-engagement' ||
+    pathname === '/portfolio-wedding' ||
+    pathname === '/portfolio-jewellery' ||
+    pathname === '/about' ||
+    pathname === '/business' ||
+    pathname === '/shipping' ||
+    pathname === '/refunds' ||
+    pathname === '/warranty' ||
+    pathname === '/privacy' ||
+    pathname === '/terms'
+  ) {
+    canonicalPath = pathname
+  } else if (portfolioDetail) {
+    canonicalPath = pathname
+  }
+
+  const canonicalUrl =
+    `https://bespokemoment.com${canonicalPath}`
+
+  let canonical = document.querySelector(
+    'link[rel="canonical"]'
+  )
+
+  if (!canonical) {
+    canonical = document.createElement('link')
+    canonical.setAttribute('rel', 'canonical')
+    document.head.appendChild(canonical)
+  }
+
+  canonical.setAttribute('href', canonicalUrl)
 }, [page])
 
 const goHome = () => {
