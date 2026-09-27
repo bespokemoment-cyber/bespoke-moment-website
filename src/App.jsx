@@ -2737,7 +2737,7 @@ formData.set('form-name', 'enquiry')
               <p>
                 From a simple solitaire to a completely personalised design, created around the details that matter to you.
               </p>
-              <a href="#portfolio-engagement" className="text-link">
+              <a href="/portfolio-engagement" className="text-link">
                 Explore engagement rings →
               </a>
             </div>
@@ -2760,7 +2760,7 @@ formData.set('form-name', 'enquiry')
               <p>
                 Matching or completely different — designed to work together in your own way.
               </p>
-              <a href="#portfolio-wedding" className="text-link">
+              <a href="/portfolio-wedding" className="text-link">
                 Explore wedding bands →
               </a>
             </div>
