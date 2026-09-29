@@ -278,41 +278,15 @@ main { width: 100%; }
   box-sizing: border-box;
 
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
 
   column-gap: 70px;
   row-gap: 40px;
 
-  padding: 70px max(24px, calc((100vw - 1100px) / 2)) 24px;
+  padding: 70px max(24px, calc((100vw - 1200px) / 2)) 24px;
 
   background: #f5f2ee;
   color: #676879;
-
-  text-align: left;
-}
-
-.footer-brand,
-.footer-column {
-  min-width: 0;
-  text-align: left;
-}
-
-.footer-brand .logo {
-  display: inline-block;
-
-  color: #1d2937;
-  font-size: 17px;
-  letter-spacing: 4px;
-  text-align: left;
-}
-
-.footer-brand p {
-  max-width: 250px;
-
-  margin: 20px 0 0;
-
-  font-size: 13px;
-  line-height: 2.1;
 
   text-align: left;
 }
@@ -370,6 +344,7 @@ main { width: 100%; }
     margin-top: 0;
   }
   .nav.nav-open { display: flex; }
+  
 /* =========================================================
    MOBILE — HERO
    Image as full background
@@ -523,15 +498,6 @@ main { width: 100%; }
     padding: 52px 24px 22px;
 
     text-align: left;
-  }
-
-  .footer-brand {
-    grid-column: 1 / -1;
-    text-align: left;
-  }
-
-  .footer-brand p {
-    max-width: 280px;
   }
 
   .footer-column {
@@ -707,7 +673,7 @@ main { width: 100%; }
 .portfolio-hero h1 {
   margin: 8px auto 24px;
 
- font-size: clamp(44px, 4.8vw, 64px);
+ font-size: clamp(35px, 4.5vw, 50px);
   line-height: .98;
   font-weight: 500;
   letter-spacing: -.045em;
@@ -839,7 +805,7 @@ main { width: 100%; }
 @media (max-width: 640px) {
   .portfolio-hero {
     display: block;
-    padding: 32px 20px 36px;
+    padding: 62px 20px 36px;
   }
 
   .back-link {
@@ -1804,6 +1770,10 @@ main { width: 100%; }
   border-bottom: 1px solid #ddd8d0;
 }
 
+.legal-hero h1 + p {
+  margin-top: 28px;
+}
+
 .legal-hero .eyebrow {
   max-width: 1080px;
   margin: 0 auto 18px;
@@ -1891,7 +1861,6 @@ main { width: 100%; }
   text-align: left;
 }
 
-
 /* Body content */
 
 .legal-section p,
@@ -1959,6 +1928,104 @@ main { width: 100%; }
   text-underline-offset: 3px;
 }
 
+/* =========================================================
+   PAYMENT PROCESS
+   ========================================================= */
+
+.payment-process-section {
+  width: 100%;
+  margin: 0 0 42px;
+  padding: 0 0 42px;
+
+  border-bottom: 1px solid #ded9d1;
+}
+
+.payment-process-section h2 {
+  margin: 0 0 42px;
+
+  font-size: 24px;
+  line-height: 1.15;
+
+  font-weight: 500;
+  letter-spacing: -0.025em;
+
+  text-align: left;
+}
+
+
+/* Each payment step */
+
+.payment-step {
+  display: grid;
+
+  grid-template-columns: 55px 300px minmax(0, 1fr);
+
+  column-gap: 28px;
+
+  align-items: start;
+
+  padding: 0 0 30px;
+  margin: 0 0 30px;
+
+  border-bottom: 1px solid #eeeae4;
+}
+
+.payment-step:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+
+/* Step number */
+
+.payment-step-number {
+  grid-column: 1;
+
+  font-size: 15px;
+  line-height: 1.4;
+
+  color: #68748a;
+
+  letter-spacing: 0.04em;
+}
+
+
+/* Step title */
+
+.payment-step h3 {
+  grid-column: 2;
+
+  margin: 0;
+
+  font-size: 19px;
+  line-height: 1.35;
+
+  font-weight: 500;
+  letter-spacing: -0.02em;
+
+  color: #111111;
+
+  text-align: left;
+}
+
+
+/* Step description */
+
+.payment-step p {
+  grid-column: 3;
+
+  margin: 0;
+
+  max-width: 680px;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  color: #596476;
+
+  text-align: left;
+}
 
 /* =========================================================
    CONTACT
@@ -2070,7 +2137,6 @@ main { width: 100%; }
 .legal-section p {
   font-size: 15px;
   line-height: 1.7;
-
   text-align: left;
 }
 
@@ -2106,6 +2172,50 @@ main { width: 100%; }
     font-size: 36px;
     line-height: 1.02;
   }
+
+
+ .payment-process-section {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+}
+
+.payment-process-section h2 {
+  margin-bottom: 32px;
+}
+
+.payment-step {
+  display: grid;
+
+  grid-template-columns: 42px minmax(0, 1fr);
+
+  column-gap: 16px;
+
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+}
+
+.payment-step-number {
+  grid-column: 1;
+  grid-row: 1;
+
+  font-size: 14px;
+}
+
+.payment-step h3 {
+  grid-column: 2;
+  grid-row: 1;
+
+  font-size: 18px;
+}
+
+.payment-step p {
+  grid-column: 2;
+  grid-row: 2;
+
+  margin-top: 8px;
+
+  max-width: none;
+}
 }
 /* =========================================================
    LEGAL LIST ALIGNMENT
@@ -3993,4 +4103,52 @@ main { width: 100%; }
     text-align: center;
   }
 
+}
+/* =========================================================
+   TABLET NAVIGATION
+   Switch to hamburger menu before navigation wraps
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 28px;
+    min-height: 78px;
+    box-sizing: border-box;
+  }
+
+  .logo img {
+    width: 82px;
+    height: auto;
+  }
+
+  .menu-button {
+    display: block;
+    margin: 0;
+  }
+
+  .nav {
+    display: none;
+
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 22px 0 10px;
+    margin-top: 0;
+
+    font-size: 13px;
+    letter-spacing: 1.4px;
+  }
+
+  .nav.nav-open {
+    display: flex;
+  }
 }

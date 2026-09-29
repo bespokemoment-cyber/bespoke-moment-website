@@ -1820,7 +1820,150 @@ function WarrantyPage() {
     </main>
   )
 }
+function PaymentsPage() {
+  return (
+    <main className="legal-page">
 
+      <section className="legal-hero">
+        <h1>
+          Secure Payments
+        </h1>
+
+        <p>
+          Simple and secure payment for your Bespoke Moment order.
+        </p>
+      </section>
+
+
+      <section className="legal-content">
+
+    <div className="payment-process-section">
+
+  <h2>How Payment Works</h2>
+
+<div className="payment-step">
+  <div className="payment-step-number">01</div>
+
+  <h3>Confirm Your Order</h3>
+
+  <p>
+    Once your design, specifications and final price have been
+    confirmed, we'll provide your payment details.
+  </p>
+</div>
+
+  <div className="payment-step">
+  <div className="payment-step-number">02</div>
+
+  <h3>Pay Securely</h3>
+
+  <p>
+    You'll receive a secure payment link powered by Stripe.
+    Payments are processed through Stripe's secure checkout.
+  </p>
+</div>
+
+<div className="payment-step">
+  <div className="payment-step-number">03</div>
+
+  <h3>Deposit &amp; Production</h3>
+
+  <p>
+    For custom jewellery, the required deposit is paid before
+    production begins.
+  </p>
+</div>
+
+<div className="payment-step">
+  <div className="payment-step-number">04</div>
+
+  <h3>Final Balance</h3>
+
+  <p>
+    Once your piece has been completed and approved, we'll provide
+    a separate payment link for the remaining balance before dispatch.
+  </p>
+</div>
+</div>
+
+
+        <div className="legal-section">
+          <h2>Payment Methods</h2>
+
+          <p>
+            We accept major payment methods through Stripe, including:
+          </p>
+
+          <ul>
+            <li>Visa</li>
+            <li>Mastercard</li>
+            <li>American Express</li>
+            <li>Apple Pay</li>
+            <li>Google Pay</li>
+            <li>Zip</li>
+          </ul>
+        </div>
+
+
+        <div className="legal-section">
+          <h2>Secure Checkout</h2>
+
+          <p>
+            Payments are processed through Stripe's secure, hosted checkout.
+            Bespoke Moment does not directly handle or store your full card
+            details.
+          </p>
+
+          <p>
+            <strong>Powered by Stripe</strong>
+          </p>
+        </div>
+
+        <div className="legal-section payment-security-section">
+          <h2>Payment Security</h2>
+
+          <p>
+            <strong>
+              For your security, Bespoke Moment will only request payment
+              through an official Stripe payment link provided after your
+              order has been confirmed.
+            </strong>
+          </p>
+
+          <p>
+            We will never ask you to send card details, passwords or payment
+            credentials directly by email, social media or messaging apps.
+          </p>
+
+          <p>
+            If you're unsure about a payment request, please contact us at{' '}
+            <a href="mailto:hello@bespokemoment.com">
+              hello@bespokemoment.com
+            </a>{' '}
+            before making any payment.
+          </p>
+        </div>
+        
+        <div className="legal-section">
+          <h2>Questions About Payment?</h2>
+
+          <p>
+            If you have any questions about your payment or order, please
+            contact us before making a payment.
+          </p>
+
+          <p>
+            <a href="/#contact">
+              Contact Bespoke Moment
+            </a>
+          </p>
+        </div>
+
+      </section>
+
+    </main>
+  )
+}
 function PrivacyPage() {
   return (
     <main className="legal-page">
@@ -3396,6 +3539,10 @@ const isAboutPage =
   pathname === '/about' ||
   pathname === '/about/'
 
+const isPaymentsPage =
+  pathname === '/payments' ||
+  pathname === '/payments/'
+
   useEffect(() => {
     const handleHashChange = () => {
       setPage(getPageFromHash())
@@ -3431,7 +3578,13 @@ const isAboutPage =
       title: 'Custom Jewellery Australia | Bespoke Moment',
       description:
         'Explore custom jewellery by Bespoke Moment, including personalised earrings, pendants, necklaces and fine jewellery created around your ideas.'
-    }
+    },
+
+  payments: {
+  title: 'Secure Payments | Bespoke Moment',
+  description:
+    'Learn how payments work for custom jewellery orders with Bespoke Moment, including secure Stripe payment links, deposits and final balances.'
+}
   }
 
   const current = seoData[page] || seoData.home
@@ -3465,7 +3618,8 @@ const isAboutPage =
     pathname === '/refunds' ||
     pathname === '/warranty' ||
     pathname === '/privacy' ||
-    pathname === '/terms'
+    pathname === '/terms'  ||
+    pathname === '/payments'
   ) {
     canonicalPath = pathname
   } else if (portfolioDetail) {
@@ -3616,6 +3770,8 @@ return (
   <BusinessPage />
 ) : isAboutPage ? (
   <AboutPage />
+) : isPaymentsPage ? (
+  <PaymentsPage />
 ) : portfolioDetail ? (
   <PortfolioDetailPage
     project={portfolioDetail.project}
@@ -3639,16 +3795,6 @@ return (
 )}
 
       <footer className="footer">
-        <div className="footer-brand">
-          <a href="/" className="logo">
-  BESPOKE MOMENT
-</a>
-          <p>
-            Custom Diamond Rings Without Retail Markup.<br />
-            Craftsmanship based in China.<br />
-            Service focused in Australia & New Zealand.
-          </p>
-        </div>
 
 {/* =====================================================
     DESKTOP FOOTER
@@ -3670,6 +3816,10 @@ return (
     <a href="/business">
       Bespoke for Business
     </a>
+
+<a href="/payments">
+  Secure Payments
+</a>
 
     <a href="/#contact">
       Contact
@@ -3775,6 +3925,9 @@ return (
         Warranty
       </a>
 
+      <a href="/payments">
+        Secure Payments
+</a>
       <a href="/refunds">
         Refunds &amp; Returns
       </a>
